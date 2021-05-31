@@ -1,0 +1,364 @@
+body {
+  font: 14px/2 "Open sans", sans-serif;
+  letter-spacing: 0.05em;
+  height: auto;
+  width: 100%;
+  margin: 0;
+}
+.slideshow {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.slideshow .slideshow-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.slideshow .slides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slideshow .slide {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.slideshow .slide.is-active {
+  display: block;
+}
+.slideshow .slide.is-loaded {
+  opacity: 1;
+}
+.slideshow .slide .caption {
+  padding: 0 100px;
+}
+.slideshow .slide .image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  z-index: 1;
+  background-size: cover;
+  image-rendering: optimizeQuality;
+}
+.slideshow .slide .image-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.slideshow .slide .image {
+  /*background-image: url('https://i2.wp.com/novocom.top/image/bGFvbci5jbmFpci5jb20=/wp-content/uploads/2016/12/light-sky-blue-solid-color-background.jpg');*/
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.slideshow .slide-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    /*border: 1px solid white;*/
+}
+h1 {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: -1px;
+  right: 30px;
+}
+a {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 7px;
+  left: 30px;
+}
+.slideshow .slide .title {
+  margin-top: 100px;
+  margin-left: -25%;
+  width: 150%;
+  font: 300 50px/1.2 "Oswald", sans-serif;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  border: 1px solid white;
+  /*background-color: #686868;*/
+}
+
+
+.slideshow .slide .text {
+  margin: 20px auto auto;
+  width: 100%;
+  line-height: 1.4;
+  /*border: 1px solid yellow;*/
+}
+.input[type=text] {
+  margin-bottom: 3px;
+  width: 25vw;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  border: 1px solid blue;
+}
+
+.submit[type=button] {
+  width: 15vw;
+  background-color: #32CD32;
+  color: black;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  border: 1px solid blue;
+}
+
+.submit:hover {
+  background-color: green;
+  color: black;
+}
+.row {
+  width: 100%;
+  display: inline-block;
+  /*border: 1px solid red;*/
+}
+.text:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.btn-group {
+  margin: 23px;
+  /*border: 1px solid #f1f1f1;*/
+}
+p {
+  margin-left: -20%
+  max-width: 400px;
+  height: 35vh;
+  font-size: 30px; 
+  color: white;
+  border: 1px solid pink;
+}
+
+.btn-group .hint {
+  /*border: 2px solid rgb(216, 2, 134);*/
+  border-radius: 1px;
+  padding: 10px 28px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 13px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0   #505050;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+.btn-group .hint:hover {
+  box-shadow: inset 0 100px 0 0   #505050;
+  color: white;
+}
+
+
+@media screen and (max-width: 240px) {
+  h1 {
+  font-size: 15px;
+  right: 15px;
+}
+a {
+  font-size: 15px;
+  left: 15px;
+}
+
+.slideshow .slide .title {
+  margin-top: 50px;
+  font: 300 15px/1.2 "Oswald", sans-serif;
+}
+
+.input[type=text] {
+  margin-bottom: 2px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 3px;
+}
+
+.submit[type=button] {
+  padding: 8px 16px;
+  font-size: 9px;
+  /*border: 1px solid blue;*/
+}
+
+p {
+  max-width: 120px;
+  height: 35vh;
+  font-size: 10px; 
+  /*border: 1px solid pink;*/
+}
+
+.btn-group .hint {
+  /*border: 2px solid rgb(216, 2, 134);*/
+
+  padding: 8px 16px;
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+
+}
+@media screen and (max-width: 400px) {
+
+h1 {
+  font-size: 18px;
+  right: 10px;
+}
+
+a {
+  font-size: 18px;
+  left: 10px;
+}
+
+.slideshow .slide .title {
+  font: 300 20px/1.2 "Oswald", sans-serif;
+  /*border: 1px solid white;*/
+}
+
+
+.slideshow .slide .text {
+  margin: 10px auto auto;
+  /*border: 1px solid yellow;*/
+}
+
+
+.input[type=text] {
+  margin-bottom: 2px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.submit[type=button] {
+  padding: 8px 16px;
+  font-size: 9px;
+  /*border: 1px solid blue;*/
+}
+
+
+p {
+  max-width: 200px;
+  height: 35vh;
+  font-size: 10px; 
+  /*border: 1px solid pink;*/
+}
+
+.btn-group .hint {
+  padding: 9px 20px;
+  display: inline-block;
+  font-size: 7px;
+}
+}
+
+
+/*.slideshow .pagination {
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+  width: 100%;
+  height: 12px;
+  cursor: default;
+  z-index: 2;
+  text-align: center;
+}
+.slideshow .pagination .item {
+  display: inline-block;
+  padding: 15px 5px;
+  position: relative;
+  width: 46px;
+  height: 32px;
+  cursor: pointer;
+  text-indent: -999em;
+  z-index: 1;
+}
+.slideshow .pagination .item + .page {
+  margin-left: -2px;
+}
+.slideshow .pagination .item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  width: 36px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+  transition: background 0.2s ease;
+}
+.slideshow .pagination .item::after {
+  width: 0;
+  background: #fff;
+  z-index: 2;
+  transition: width 0.2s ease;
+}
+.slideshow .pagination .item:hover::before, .slideshow .pagination .item.is-active::before {
+  background-color: #fff;
+}*/
+
+
+.slideshow .arrows .arrow {
+  margin: -33px 0 0;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  z-index: 3;
+}
+.slideshow .arrows .prev {
+  left: 30px;
+}
+.slideshow .arrows .prev:hover .svg {
+  left: -10px;
+}
+.slideshow .arrows .next {
+  right: 30px;
+}
+.slideshow .arrows .next:hover .svg {
+  left: 10px;
+}
+.slideshow .arrows .svg {
+  position: relative;
+  left: 0;
+  width: 14px;
+  height: 26px;
+  fill: #fff;
+  transition: left 0.2s ease;
+}
