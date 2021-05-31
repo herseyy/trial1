@@ -295,7 +295,6 @@ a {
 
 
 .input[type=text] {
-  margin-bottom: 2px;
   padding-top: 6px;
   padding-bottom: 6px;
   border: 1px solid blue;
@@ -303,13 +302,13 @@ a {
 
 .submit[type=button] {
   padding: 6px 10px 6px 10px;
-  font-size: 9px;
+  font-size: 15px;
   border: 1px solid blue;
 }
 
 
 p {
-  font-size: 18px; 
+  font-size: 15px; 
   border: 1px solid orange;
 }
 
@@ -323,8 +322,20 @@ p {
 
 .slideshow .arrows .arrow {
   width: 10px;
-  height: 20px;
+  height: 18px;
   border: 1px solid green;
+}
+.slideshow .arrows .prev {
+  left: 10px;
+}
+.slideshow .arrows .prev:hover .svg {
+  left: -5px;
+}
+.slideshow .arrows .next {
+  right: 10px;
+}
+.slideshow .arrows .next:hover .svg {
+  left: 5px;
 }
 
 }
