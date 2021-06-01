@@ -270,26 +270,26 @@ h1 {
   font-size: 18px;
   right: 10px;
   top: -10px;
-  border: 1px solid yellow;
+  /*border: 1px solid yellow;*/
 }
 
 a {
   font-size: 18px;
   left: 10px;
   top: 5px;
-  border: 1px solid yellow;
+  /*border: 1px solid yellow;*/
 }
 
 
 .slideshow .slide .title {
   font: 300 40px/1.2 "Oswald", sans-serif;
-  border: 1px solid pink;
+  /*border: 1px solid pink;*/
 }
 
 
 .slideshow .slide .text {
   margin-top: 10px;
-  border: 1px solid green;
+  /*border: 1px solid green;*/
 }
 
 
@@ -297,20 +297,20 @@ a {
   width: 28vw;
   padding-top: 6px;
   padding-bottom: 6px;
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
 }
 
 .submit[type=button] {
   width: 18vw;
   padding: 7px 10px 7px 10px;
   font-size: 11px;
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
 }
 
 
 p {
   font-size: 18px; 
-  border: 1px solid green;
+  /*border: 1px solid green;*/
 }
 
 
@@ -318,13 +318,13 @@ p {
   display: inline-block;
   padding: 8px 10px;
   font-size: 8px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
 .slideshow .arrows .arrow {
   width: 13px;
   height: 21px;
-  border: 1px solid green;
+  /*border: 1px solid green;*/
 }
 .slideshow .arrows .prev {
   left: 10px;
