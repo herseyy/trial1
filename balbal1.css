@@ -48,7 +48,7 @@ body {
 }
 .slideshow .slide .caption {
   padding: 0 95px;
-  border: 1px solid purple;
+  /*border: 1px solid purple;*/
 }
 .slideshow .slide .image-container {
   position: absolute;
@@ -112,7 +112,7 @@ a {
   font: 300 50px/1.2 "Oswald", sans-serif;
   letter-spacing: 0.35em;
   text-transform: uppercase;
-  border: 1px solid white;
+  /*border: 1px solid white;*/
   /*background-color: #686868;*/
 }
 
@@ -121,7 +121,7 @@ a {
   margin: 20px auto auto;
   width: 100%;
   line-height: 1.4;
-  border: 1px solid yellow;
+  /*border: 1px solid yellow;*/
 }
 .input[type=text] {
   width: 25vw;
@@ -130,7 +130,7 @@ a {
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
 }
 
 .submit[type=button] {
@@ -143,7 +143,7 @@ a {
   border-radius: 4px;
   cursor: pointer;
   font-size: 13px;
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
 }
 
 .submit:hover {
@@ -153,7 +153,7 @@ a {
 .row {
   width: 100%;
   display: inline-block;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 .text:after {
   content: "";
@@ -171,7 +171,7 @@ p {
   font-size: 25px; 
   color: white;
   margin-top: 50px;
-  border: 1px solid pink;
+  /*border: 1px solid pink;*/
 }
 
 .btn-group .hint {
@@ -186,7 +186,7 @@ p {
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
-  border: 1px solid orange;
+  /*border: 1px solid orange;*/
 }
 .btn-group .hint:hover {
   box-shadow: inset 0 100px 0 0   #505050;
