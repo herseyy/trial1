@@ -8,39 +8,50 @@ header {
   
 }
 .more-space {
-  margin-bottom: 10%;
+  margin-bottom: 120px;
+  margin-top: 120px;
+  /*border: 1px solid orange;*/
 }
 header h1 {
   color: #34262B;
-  font-size: 150px;
+  font-size: 95px;
+  margin-bottom: 100px;
+  /*border: 1px solid blue;*/
 }
 h1 {
   font-family: "News Cycle", sans-serif;
+
 }
 .break1, .break2, .contact h2, .contact h3, p, header h4 {
   font-family: "Coming Soon", sans-serif;
 }
-.social-media {
-  margin-top: 7%;
-}
-.intro {
-  margin-top: 12%;
-}
+
 header h4 {
   color: #1f0000;
-  font-size: 28px;
+  font-size: 40px;
   font-weight: bold;
+  margin-bottom: 50px;
+  /*border: 1px solid yellow;*/
+
 }
 .red {
   color: #3d0000;
   font-weight: bold;
-  margin-bottom: 10%;
-/*  font-size: 20px;
-  color: #FDFFFC;
-  margin-left: 12%;
-  margin-right: 12%;
-  margin-top: 7%;
-  margin-bottom: 10%;*/
+  font-size: 30px;
+  margin-bottom: 60px;
+  /*border: 1px solid red;*/
+}
+.team {
+  border: 1px solid #FDFFFC;
+  padding: 20px 50px 20px 50px;
+  text-decoration: none;
+  color: #F9F2F6;
+  background: rgba(193, 41, 46, 0.6);
+}
+.team:hover {
+  text-decoration: none;
+  color: #F9F2F6;
+  background-color: #610000;
 }
 /**Navbar customs**/
 nav ul li {
@@ -121,35 +132,24 @@ nav ul li {
 }
 .about-us h1 {
   color: #C1292E;
-  font-size: 100px;
-  margin-top: 7%;
+  font-size: 60px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  /*border: 1px solid yellow;*/
 }
 .about-us-p {
-  font-size: 20px;
+  font-size: 23px;
   color: #FDFFFC;
-  margin-left: 12%;
-  margin-right: 12%;
-  margin-top: 7%;
-  margin-bottom: 7%;
+  margin-bottom: 15%;
+  margin-left: 15px;
+  margin-right: 15px;
+  /*border: 1px solid blue;*/
 }
 
 .descript {
-  margin-bottom: 10%;
+  /*border: 1px solid orange;*/
 }
 
-.team {
-  /*margin-top: -25%;*/
-  border: 1px solid #FDFFFC;
-  padding: 20px 50px 20px 50px;
-  text-decoration: none;
-  color: #F9F2F6;
-  background: rgba(193, 41, 46, 0.6);
-}
-.team:hover {
-  text-decoration: none;
-  color: #F9F2F6;
-  background-color: #610000;
-}
 /*======== BREAK ====*/
 .break1 {
   background: url(https://images2.minutemediacdn.com/image/upload/c_crop,h_1349,w_2400,x_0,y_251/f_auto,q_auto,w_1110/v1621444242/shape/mentalfloss/gettyimages-164943672.jpg) center center fixed;
@@ -182,16 +182,24 @@ nav ul li {
 /*========= emoji ======*/
 .about-us2 {
   background-color: #000036;
-  opacity: 0.9;
 }
 .about-us2 h1 {
   color: #c1292e;
-  font-size: 80px;
-  margin-top: 7%;
+  font-size: 60px;
+  margin-top: 80px;
+  margin-bottom: 50px;
 }
 
+.about-us-p {
+  font-size: 23px;
+  color: #FDFFFC;
+  margin-bottom: 15%;
+  margin-left: 15px;
+  margin-right: 15px;
+  /*border: 1px solid blue;*/
+}
 
-@media screen and (max-width: 400px) {
+/*@media screen and (max-width: 400px) {
   .more-space {
   margin-bottom: 30%;
 }
@@ -206,7 +214,6 @@ nav ul li {
   }
 
   .team {
-  /*margin-top: -25%;*/
     padding: 10px 30px 10px 30px;
     font-size: 15px;
   }
@@ -244,4 +251,4 @@ nav ul li {
 
   .break1 h3 {
     font-size: 50px;
-  }
+  }*/
