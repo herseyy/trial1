@@ -1415,8 +1415,8 @@ function b40hint1() {
   document.getElementById("b40").innerHTML = "Katunog ng salitang hugas sa ingles";
 }
 function b40hint2() {
-  document.getElementById("b40").innerHTML = "Magkatulad bigkasin ang unang pantig at ikalawang pantig";
+  document.getElementById("b40").innerHTML = "Ang unang pantig ay past tense ng 'is'";
 }
 function b40hint3() {
-  document.getElementById("b40").innerHTML = "Ang unang pantig ay past tense ng 'is'";
+  document.getElementById("b40").innerHTML = "Magkatulad bigkasin ang unang pantig at ikalawang pantig";
 }
