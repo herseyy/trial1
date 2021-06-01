@@ -1,0 +1,247 @@
+header {
+  background-color: #34262B;
+  background: url('https://assets.entrepreneur.com/content/3x2/2000/20190102161219-GettyImages-904000456.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
+.more-space {
+  margin-bottom: 10%;
+}
+header h1 {
+  color: #34262B;
+  font-size: 150px;
+}
+h1 {
+  font-family: "News Cycle", sans-serif;
+}
+.break1, .break2, .contact h2, .contact h3, p, header h4 {
+  font-family: "Coming Soon", sans-serif;
+}
+.social-media {
+  margin-top: 7%;
+}
+.intro {
+  margin-top: 12%;
+}
+header h4 {
+  color: #1f0000;
+  font-size: 28px;
+  font-weight: bold;
+}
+.red {
+  color: #3d0000;
+  font-weight: bold;
+  margin-bottom: 10%;
+/*  font-size: 20px;
+  color: #FDFFFC;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 7%;
+  margin-bottom: 10%;*/
+}
+/**Navbar customs**/
+nav ul li {
+  font-size: 17px;
+  font-family: "News Cycle";
+}
+.about-us a {
+  font-family: "News Cycle", serif;
+}
+.navbar-brand {
+  font-size: 25px;
+  font-family: "News Cycle";
+}
+.navbar-default {
+  background-color: #FDFFFC;
+  border: 0;
+}
+.navbar-default .navbar-brand {
+  margin-left: 5%;
+  color: #34262B;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #FDFFFC;
+  background-color: transparent;
+}
+.navbar-default .navbar-text {
+  color: #210A2A;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #210A2A;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #F9F2F6;
+  background-color: transparent;
+  border-bottom: 1px solid #F9F2F6;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #F9F2F6;
+  background-color: #e7e7e7;
+}
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+  color: #F9F2F6;
+  background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+  border-color: #ddd;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #e7e7e7;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+.navbar-inner {
+  background: rgba(0, 0, 0, 0);
+}
+/**Navbar customs end**/
+/***  balballers  ****/
+.about-us {
+  background-color: #34262B;
+}
+.about-us h1 {
+  color: #C1292E;
+  font-size: 100px;
+  margin-top: 7%;
+}
+.about-us-p {
+  font-size: 20px;
+  color: #FDFFFC;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+
+.descript {
+  margin-bottom: 10%;
+}
+
+.team {
+  /*margin-top: -25%;*/
+  border: 1px solid #FDFFFC;
+  padding: 20px 50px 20px 50px;
+  text-decoration: none;
+  color: #F9F2F6;
+  background: rgba(193, 41, 46, 0.6);
+}
+.team:hover {
+  text-decoration: none;
+  color: #F9F2F6;
+  background-color: #610000;
+}
+/*======== BREAK ====*/
+.break1 {
+  background: url(https://images2.minutemediacdn.com/image/upload/c_crop,h_1349,w_2400,x_0,y_251/f_auto,q_auto,w_1110/v1621444242/shape/mentalfloss/gettyimages-164943672.jpg) center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.break2 {
+  background: url(https://images2.minutemediacdn.com/image/upload/c_crop,h_1349,w_2400,x_0,y_251/f_auto,q_auto,w_1110/v1621444242/shape/mentalfloss/gettyimages-164943672.jpg) center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.break2 h3 {
+  color: #f2f2f2;
+  font-size: 70px;
+  font-weight: bold;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+.break1 h3 {
+  color: #f2f2f2;
+  font-size: 70px;
+  font-weight: bold;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+/*========= emoji ======*/
+.about-us2 {
+  background-color: #000036;
+  opacity: 0.9;
+}
+.about-us2 h1 {
+  color: #c1292e;
+  font-size: 80px;
+  margin-top: 7%;
+}
+
+
+@media screen and (max-width: 400px) {
+  .more-space {
+  margin-bottom: 30%;
+}
+  header h1, .about-us h1, .works h1, .contact h1 {
+    font-size: 50px;
+    margin-bottom: 15%;
+  }
+    
+  header h4 {
+    font-size: 20px;
+    margin-bottom: 15%;
+  }
+
+  .team {
+  /*margin-top: -25%;*/
+    padding: 10px 30px 10px 30px;
+    font-size: 15px;
+  }
+
+  .red {
+    margin-bottom: 13%;
+  }
+
+  .about-us h1 {
+    color: #C1292E;
+    font-size: 50px;
+    margin-top: 7%;
+  }
+
+  .about-us-p {
+    font-size: 18px;
+  }
+
+  .contact i {
+    font-size: 500%;
+  }
+
+  .intro {
+    margin-top: 50%;
+  }
+
+  .linked-in-a {
+    color: #fff;
+    font-size: 300;
+  }
+
+  .break2 h3 {
+    font-size: 50px;
+  }
+
+  .break1 h3 {
+    font-size: 50px;
+  }
