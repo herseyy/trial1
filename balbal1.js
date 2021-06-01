@@ -367,10 +367,10 @@ function b5hint1() {
   document.getElementById("b5").innerHTML = "May anim na letra";
 }
 function b5hint2() {
-  document.getElementById("b5").innerHTML = "Madalas mangyari sa eskwelahan";
+  document.getElementById("b5").innerHTML = "Mga karniborang isda";
 }
 function b5hint3() {
-  document.getElementById("b5").innerHTML = "May bagong ballpen ang kaklase mo";
+  document.getElementById("b5").innerHTML = "Iniimik tuwing interesado kang tingnan ang isang bagay";
 }
 
 
@@ -1420,4 +1420,3 @@ function b40hint2() {
 function b40hint3() {
   document.getElementById("b40").innerHTML = "Magkatulad bigkasin ang unang pantig at ikalawang pantig";
 }
- 
