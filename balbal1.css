@@ -305,9 +305,23 @@ a {
 .submit[type=button] {
   width: 18vw;
   padding: 5px 10px 5px 10px;
-  font-size: 10px;
+  font-size: 2px;
   border: 1px solid blue;
 }
+
+
+/*.submit[type=button] {
+  width: 15vw;
+  background-color: #32CD32;
+  color: black;
+  padding: 12px 8px 12px 8px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  border: 1px solid blue;
+}*/
 
 
 p {
