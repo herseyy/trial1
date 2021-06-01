@@ -124,7 +124,6 @@ a {
   border: 1px solid yellow;
 }
 .input[type=text] {
-  margin-bottom: 3px;
   width: 25vw;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -242,7 +241,6 @@ a {
   border: 1px solid orange;
 }
 .input[type=text] {
-  margin-bottom: 2px;
   padding-top: 8px;
   padding-bottom: 8px;
   border-radius: 3px;
@@ -305,7 +303,7 @@ a {
 .submit[type=button] {
   width: 18vw;
   padding: 5px 10px 5px 10px;
-  font-size: 2px;
+  font-size: 8px;
   border: 1px solid blue;
 }
 
@@ -332,7 +330,7 @@ p {
 
 .btn-group .hint {
   display: inline-block;
-  padding: 9px 13px;
+  padding: 8px 12px;
   font-size: 10px;
   border: 1px solid white;
 }
