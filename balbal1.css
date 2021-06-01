@@ -171,6 +171,7 @@ p {
   height: 35vh;
   font-size: 25px; 
   color: white;
+  margin-top: 50px;
   border: 1px solid pink;
 }
 
@@ -289,7 +290,7 @@ a {
 
 
 .slideshow .slide .text {
-  margin: 10px auto auto;
+  margin-top: 10px;
   border: 1px solid green;
 }
 
@@ -309,7 +310,7 @@ a {
 
 p {
   font-size: 15px; 
-  border: 1px solid orange;
+  border: 1px solid green;
 }
 
 
