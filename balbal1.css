@@ -302,7 +302,7 @@ a {
 
 .submit[type=button] {
   width: 18vw;
-  padding: 6px 10px 6px 10px;
+  padding: 7px 10px 7px 10px;
   font-size: 11px;
   border: 1px solid blue;
 }
@@ -322,8 +322,8 @@ p {
 }
 
 .slideshow .arrows .arrow {
-  width: 10px;
-  height: 18px;
+  width: 13px;
+  height: 21px;
   border: 1px solid green;
 }
 .slideshow .arrows .prev {
