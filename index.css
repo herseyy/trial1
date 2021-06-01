@@ -227,7 +227,7 @@ header h4 {
 
 .about-us h1 {
   font-size: 40px;
-  margin-top: 60px;
+  margin: 60px 25px 50px 25px;
   /*border: 1px solid black;*/
 }
 .about-us-p {
@@ -239,9 +239,10 @@ header h4 {
 
 .about-us2 h1 {
   font-size: 40px;
-  margin-top: 60px;
+  margin: 60px 25px 50px 25px;
   /*border: 1px solid black;*/
 }
+
 
 .about-us-p {
   font-size: 20px;
