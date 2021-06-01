@@ -1412,11 +1412,11 @@ function balbal40() {
 }
 
 function b40hint1() {
-  document.getElementById("b40").innerHTML = "Mayroong anim na letra";
+  document.getElementById("b40").innerHTML = "Katunog ng salitang hugas sa ingles";
 }
 function b40hint2() {
   document.getElementById("b40").innerHTML = "Magkatulad bigkasin ang unang pantig at ikalawang pantig";
 }
 function b40hint3() {
-  document.getElementById("b40").innerHTML = "Katunog ng salitang hugas sa ingles";
+  document.getElementById("b40").innerHTML = "Ang unang pantig ay past tense ng 'is'";
 }
