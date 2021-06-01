@@ -31,7 +31,7 @@ header h4 {
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 50px;
-  /*border: 1px solid yellow;*/
+  border: 1px solid yellow;
 
 }
 .red {
@@ -190,65 +190,64 @@ nav ul li {
   margin-bottom: 50px;
 }
 
+
+@media screen and (max-width: 400px) {
+
+.more-space {
+  margin-bottom: 80px;
+  margin-top: 100px;
+  border: 1px solid orange;
+}
+
+header h1 {
+  color: #34262B;
+  font-size: 70px;
+  margin-bottom: 50px;
+  border: 1px solid blue;
+}
+
+
+header h4 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  border: 1px solid yellow;
+}
+
+.red {
+  font-size: 20px;
+  margin-bottom: 10px;
+  border: 1px solid red;
+}
+
+
+.about-us h1 {
+  font-size: 40px;
+  margin-top: 70px;
+  border: 1px solid black;
+}
 .about-us-p {
-  font-size: 23px;
-  color: #FDFFFC;
-  margin-bottom: 15%;
-  margin-left: 15px;
-  margin-right: 15px;
-  /*border: 1px solid blue;*/
+  font-size: 20px;
+  margin-left: 18px;
+  margin-right: 18px;
+  border: 1px solid violet;
 }
 
-/*@media screen and (max-width: 400px) {
-  .more-space {
-  margin-bottom: 30%;
+.about-us2 h1 {
+  font-size: 40px;
+  margin-top: 70px;
+  border: 1px solid black;
 }
-  header h1, .about-us h1, .works h1, .contact h1 {
-    font-size: 50px;
-    margin-bottom: 15%;
-  }
-    
-  header h4 {
-    font-size: 20px;
-    margin-bottom: 15%;
-  }
 
-  .team {
-    padding: 10px 30px 10px 30px;
-    font-size: 15px;
-  }
+.about-us-p {
+  font-size: 20px;
+  margin-left: 18px;
+  margin-right: 18px;
+  border: 1px solid violet;
+}
 
-  .red {
-    margin-bottom: 13%;
-  }
-
-  .about-us h1 {
-    color: #C1292E;
-    font-size: 50px;
-    margin-top: 7%;
-  }
-
-  .about-us-p {
-    font-size: 18px;
-  }
-
-  .contact i {
-    font-size: 500%;
-  }
-
-  .intro {
-    margin-top: 50%;
-  }
-
-  .linked-in-a {
-    color: #fff;
-    font-size: 300;
-  }
-
-  .break2 h3 {
-    font-size: 50px;
-  }
-
-  .break1 h3 {
-    font-size: 50px;
-  }*/
+.break2 h3 {
+  font-size: 60px;
+}
+.break1 h3 {
+  font-size: 60px;
+}
