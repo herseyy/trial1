@@ -1420,3 +1420,4 @@ function b40hint2() {
 function b40hint3() {
   document.getElementById("b40").innerHTML = "Magkatulad bigkasin ang unang pantig at ikalawang pantig";
 }
+ 
