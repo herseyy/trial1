@@ -134,15 +134,12 @@ nav ul li {
   color: #C1292E;
   font-size: 60px;
   margin-top: 80px;
-  margin-bottom: 50px;
   /*border: 1px solid yellow;*/
 }
 .about-us-p {
   font-size: 23px;
   color: #FDFFFC;
-  margin-bottom: 15%;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin: 50px 15px 13% 15px;
   /*border: 1px solid blue;*/
 }
 
@@ -169,15 +166,15 @@ nav ul li {
   color: #f2f2f2;
   font-size: 70px;
   font-weight: bold;
-  margin-top: 15%;
-  margin-bottom: 15%;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 .break1 h3 {
   color: #f2f2f2;
   font-size: 70px;
   font-weight: bold;
-  margin-top: 15%;
-  margin-bottom: 15%;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 /*========= emoji ======*/
 .about-us2 {
@@ -187,8 +184,9 @@ nav ul li {
   color: #c1292e;
   font-size: 60px;
   margin-top: 80px;
-  margin-bottom: 50px;
 }
+
+
 
 
 @media screen and (max-width: 400px) {
