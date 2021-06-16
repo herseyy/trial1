@@ -224,6 +224,9 @@ if($('.main-content .slideshow').length > 1) {
 }
 
 
+var score = 0;
+
+var attemptsb1 = 3;
 function balbal1() {
   var x, text;
 
@@ -233,27 +236,60 @@ function balbal1() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "starbs") {
-    text = "&#x2705;  Ang starbs ay nangangahulugang pakopya.";
+    text1 = ""
+  } 
+
+  else if (l_case == "starbs") {
+    score++;
+    text1 = "&#x2705; Ang starbs ay nangangahulugang pakopya.";
+    text = ""
   }
+
   else {
-    text = "&#10060;  Ang starbs ay nangangahulugang pakopya.";
+    if (attemptsb1 > 0) {
+      attemptsb1--;
+      if (attemptsb1 == 2) {
+        document.getElementById("b1h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb1;
+        text1 = ""
+      }
+
+      else if (attemptsb1 == 1) {
+        document.getElementById("b1h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb1;
+        text1 = ""
+      }
+
+      else if (attemptsb1 == 0) {
+        document.getElementById("b1h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb1;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay starbs"
+      text1 = "&#10060; Ang starbs ay nangangahulugang pakopya.";
+    }
   }
 
   document.getElementById("b1").innerHTML = text;
+  document.getElementById("b1h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b1hint1() {
-  document.getElementById("b1").innerHTML = "May anim na letra";
+  document.getElementById("b1h").innerHTML = "May anim na letra";
 }
 function b1hint2() {
-  document.getElementById("b1").innerHTML = "Madalas gawin sa eskwelahan";
+  document.getElementById("b1h").innerHTML = "Madalas gawin sa eskwelahan";
 }
 function b1hint3() {
-  document.getElementById("b1").innerHTML = "Gawain mo kapag walang takdang aralin";
+  document.getElementById("b1h").innerHTML = "Gawain mo kapag walang takdang aralin";
 }
 
 
+var attemptsb2 = 3;
 function balbal2() {
   var x, text;
 
@@ -263,27 +299,60 @@ function balbal2() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "sags") {
-    text = "&#x2705;   Ang sags ay nangangahulugang pilit.";
+    text1 = ""
+  } 
+
+  else if (l_case == "sags") {
+    score++;
+    text1 = "&#x2705; Ang sags ay nangangahulugang pilit.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang sags ay nangangahulugang pilit.";
+    if (attemptsb2 > 0) {
+      attemptsb2--;
+      if (attemptsb2 == 2) {
+        document.getElementById("b2h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb2;
+        text1 = ""
+      }
+
+      else if (attemptsb2 == 1) {
+        document.getElementById("b2h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb2;
+        text1 = ""
+      }
+
+      else if (attemptsb2 == 0) {
+        document.getElementById("b2h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb2;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay sags"
+      text1 = "&#10060; Ang sags ay nangangahulugang pilit.";
+    }
   }
 
   document.getElementById("b2").innerHTML = text;
+  document.getElementById("b2h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b2hint1() {
-  document.getElementById("b2").innerHTML = "May apat na letra";
+  document.getElementById("b2h").innerHTML = "May apat na letra";
 }
 function b2hint2() {
-  document.getElementById("b2").innerHTML = "Madalas mong gawin kapag nagpipinta";
+  document.getElementById("b2h").innerHTML = "Madalas mong gawin kapag nagpipinta";
 }
 function b2hint3() {
-  document.getElementById("b2").innerHTML = "Ginagawa mo kapag wala kang gana";
+  document.getElementById("b2h").innerHTML = "Ginagawa mo kapag wala kang gana";
 }
 
 
+var attemptsb3 = 3;
 function balbal3() {
   var x, text;
 
@@ -292,28 +361,61 @@ function balbal3() {
   l_case = x.toLowerCase();
 
   if (l_case == "") {
+    text1 = ""
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "pics") {
-    text = "&#x2705;   Ang pics ay nangangahulugang go ako.";
+  } 
+
+  else if (l_case == "pics") {
+    score++;
+    text1 = "&#x2705; Ang pics ay nangangahulugang go ako.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang pics ay nangangahulugang go ako.";
+    if (attemptsb3 > 0) {
+      attemptsb3--;
+      if (attemptsb3 == 2) {
+        document.getElementById("b3h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb3;
+        text1 = ""
+      }
+
+      else if (attemptsb3 == 1) {
+        document.getElementById("b3h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb3;
+        text1 = ""
+      }
+
+      else if (attemptsb3 == 0) {
+        document.getElementById("b3h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb3;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay pics"
+      text1 = "&#10060; Ang pics ay nangangahulugang go ako.";
+    }
   }
 
   document.getElementById("b3").innerHTML = text;
+  document.getElementById("b3h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b3hint1() {
-  document.getElementById("b3").innerHTML = "May apat na letra";
+  document.getElementById("b3h").innerHTML = "May apat na letra";
 }
 function b3hint2() {
-  document.getElementById("b3").innerHTML = "Madalas mangyari kapag may pupuntahan";
+  document.getElementById("b3h").innerHTML = "Madalas mangyari kapag may pupuntahan";
 }
 function b3hint3() {
-  document.getElementById("b3").innerHTML = "Lagi mong sinasabi kapag pinayagan ka";
+  document.getElementById("b3h").innerHTML = "Lagi mong sinasabi kapag pinayagan ka";
 }
 
 
+var attemptsb4 = 3;
 function balbal4() {
   var x, text;
 
@@ -323,27 +425,61 @@ function balbal4() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "carps") {
-    text = "&#x2705;   Ang carps ay ang pagtatanong kung game ka ba.";
+    text1 = ""
+  } 
+
+  else if (l_case == "carps") {
+    score++;
+    text1 = "&#x2705; Ang carps ay ang pagtatanong kung game ka ba.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang carps ay ang pagtatanong kung game ka ba.";
+    if (attemptsb4 > 0) {
+      attemptsb4--;
+      if (attemptsb4 == 2) {
+        document.getElementById("b4h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb4;
+        text1 = ""
+      }
+
+      else if (attemptsb4 == 1) {
+        document.getElementById("b4h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb4;
+        text1 = ""
+      }
+
+      else if (attemptsb4 == 0) {
+        document.getElementById("b4h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb4;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay carps"
+      text1 = "&#10060; Ang carps ay ang pagtatanong kung game ka ba.";
+    }
   }
 
   document.getElementById("b4").innerHTML = text;
+  document.getElementById("b4h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
+
 
 function b4hint1() {
-  document.getElementById("b4").innerHTML = "May limang letra";
+  document.getElementById("b4h").innerHTML = "May limang letra";
 }
 function b4hint2() {
-  document.getElementById("b4").innerHTML = "Madalas itanong kapag inaakit ka";
+  document.getElementById("b4h").innerHTML = "Madalas itanong kapag inaakit ka";
 }
 function b4hint3() {
-  document.getElementById("b4").innerHTML = "Patok din ito kapag magbobonding";
+  document.getElementById("b4h").innerHTML = "Patok din ito kapag magbobonding";
 }
 
 
+var attemptsb5 = 3;
 function balbal5() {
   var x, text;
 
@@ -353,27 +489,60 @@ function balbal5() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "sharks") {
-    text = "&#x2705;   Ang sharks ay nangangahulugang patingin.";
+    text1 = ""
+  } 
+
+  else if (l_case == "sharks") {
+    score++;
+    text1 = "&#x2705; Ang sharks ay nangangahulugang patingin.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang sharks ay nangangahulugang patingin.";
+    if (attemptsb5 > 0) {
+      attemptsb5--;
+      if (attemptsb5 == 2) {
+        document.getElementById("b5h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb5;
+        text1 = ""
+      }
+
+      else if (attemptsb5 == 1) {
+        document.getElementById("b5h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb5;
+        text1 = ""
+      }
+
+      else if (attemptsb5 == 0) {
+        document.getElementById("b5h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb5;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay sharks"
+      text1 = "&#10060; Ang sharks ay nangangahulugang patingin.";
+    }
   }
 
   document.getElementById("b5").innerHTML = text;
+  document.getElementById("b5h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b5hint1() {
-  document.getElementById("b5").innerHTML = "May anim na letra";
+  document.getElementById("b5h").innerHTML = "May anim na letra";
 }
 function b5hint2() {
-  document.getElementById("b5").innerHTML = "Mga karniborang isda";
+  document.getElementById("b5h").innerHTML = "Mga karniborang isda";
 }
 function b5hint3() {
-  document.getElementById("b5").innerHTML = "Iniimik tuwing interesado kang tingnan ang isang bagay";
+  document.getElementById("b5h").innerHTML = "Iniimik tuwing interesado kang tingnan ang isang bagay";
 }
 
 
+var attemptsb6 = 3;
 function balbal6() {
   var x, text;
 
@@ -383,27 +552,61 @@ function balbal6() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "scoobs") {
-    text = "&#x2705;   Ang scoobs ay nangangahulugang hindi.";
+    text1 = ""
+  } 
+
+  else if (l_case == "scoobs") {
+    score++;
+    text1 = "&#x2705; Ang scoobs ay nangangahulugang hindi.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang scoobs ay nangangahulugang hindi.";
+    if (attemptsb6 > 0) {
+      attemptsb6--;
+      if (attemptsb6 == 2) {
+        document.getElementById("b6h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb6;
+        text1 = ""
+      }
+
+      else if (attemptsb6 == 1) {
+        document.getElementById("b6h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb6;
+        text1 = ""
+      }
+
+      else if (attemptsb6 == 0) {
+        document.getElementById("b6h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb6;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay scoobs"
+      text1 = "&#10060; Ang scoobs ay nangangahulugang hindi.";
+    }
   }
 
   document.getElementById("b6").innerHTML = text;
+  document.getElementById("b6h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
+
 
 function b6hint1() {
-  document.getElementById("b6").innerHTML = "May anim na letra";
+  document.getElementById("b6h").innerHTML = "May anim na letra";
 }
 function b6hint2() {
-  document.getElementById("b6").innerHTML = "Katunog ng isang sikat na dog cartoon character";
+  document.getElementById("b6h").innerHTML = "Katunog ng isang sikat na dog cartoon character";
 }
 function b6hint3() {
-  document.getElementById("b6").innerHTML = "Paraan ng pagtanggi";
+  document.getElementById("b6h").innerHTML = "Paraan ng pagtanggi";
 }
 
 
+var attemptsb7 = 3;
 function balbal7() {
   var x, text;
 
@@ -413,27 +616,61 @@ function balbal7() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "salt") {
-    text = "&#x2705;   Ang salt ay nangangahulugang talaga.";
+    text1 = ""
+  } 
+
+  else if (l_case == "salt") {
+    score++;
+    text1 = "&#x2705; Ang salt ay nangangahulugang talaga.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang salt ay nangangahulugang talaga.";
+    if (attemptsb7 > 0) {
+      attemptsb7--;
+      if (attemptsb7 == 2) {
+        document.getElementById("b7h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb7;
+        text1 = ""
+      }
+
+      else if (attemptsb7 == 1) {
+        document.getElementById("b7h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb7;
+        text1 = ""
+      }
+
+      else if (attemptsb7 == 0) {
+        document.getElementById("b7h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb7;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay salt"
+      text1 = "&#10060; Ang salt ay nangangahulugang talaga.";
+    }
   }
 
   document.getElementById("b7").innerHTML = text;
+  document.getElementById("b7h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
+
 
 function b7hint1() {
-  document.getElementById("b7").innerHTML = "May apat na letra";
+  document.getElementById("b7h").innerHTML = "May apat na letra";
 }
 function b7hint2() {
-  document.getElementById("b7").innerHTML = "Salitang naglalahad ng pagsang-ayon";
+  document.getElementById("b7h").innerHTML = "Salitang naglalahad ng pagsang-ayon";
 }
 function b7hint3() {
-  document.getElementById("b7").innerHTML = "Madalas sabihin kapag may pagdududa";
+  document.getElementById("b7h").innerHTML = "Madalas sabihin kapag may pagdududa";
 }
 
 
+var attemptsb8 = 3;
 function balbal8() {
   var x, text;
 
@@ -443,27 +680,61 @@ function balbal8() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "tea") {
-    text = "&#x2705;   Ang tea ay nangangahulugang tsismis.";
+    text1 = ""
+  } 
+
+  else if (l_case == "tea") {
+    score++;
+    text1 = "&#x2705; Ang tea ay nangangahulugang tsismis.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang tea ay nangangahulugang tsismis.";
+    if (attemptsb8 > 0) {
+      attemptsb8--;
+      if (attemptsb8 == 2) {
+        document.getElementById("b8h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb8;
+        text1 = ""
+      }
+
+      else if (attemptsb8 == 1) {
+        document.getElementById("b8h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb8;
+        text1 = ""
+      }
+
+      else if (attemptsb8 == 0) {
+        document.getElementById("b8h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb8;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay tea"
+      text1 = "&#10060; Ang tea ay nangangahulugang tsismis.";
+    }
   }
 
   document.getElementById("b8").innerHTML = text;
+  document.getElementById("b8h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
+
 
 function b8hint1() {
-  document.getElementById("b8").innerHTML = "May tatlong letra";
+  document.getElementById("b8h").innerHTML = "May tatlong letra";
 }
 function b8hint2() {
-  document.getElementById("b8").innerHTML = "Kadalasang tawag sa 'chismis'";
+  document.getElementById("b8h").innerHTML = "Kadalasang tawag sa 'chismis'";
 }
 function b8hint3() {
-  document.getElementById("b8").innerHTML = "Mainam na inumin tuwing umaga";
+  document.getElementById("b8h").innerHTML = "Mainam na inumin tuwing umaga";
 }
 
 
+var attemptsb9 = 3;
 function balbal9() {
   var x, text;
 
@@ -473,27 +744,61 @@ function balbal9() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "salty") {
-    text = "&#x2705;   Ang salty ay tumutukoy sa taong barinuhin.";
+    text1 = ""
+  } 
+
+  else if (l_case == "salty") {
+    score++;
+    text1 = "&#x2705; Ang salty ay tumutukoy sa taong barinuhin.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang salty ay tumutukoy sa taong barinuhin.";
+    if (attemptsb9 > 0) {
+      attemptsb9--;
+      if (attemptsb9 == 2) {
+        document.getElementById("b9h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb9;
+        text1 = ""
+      }
+
+      else if (attemptsb9 == 1) {
+        document.getElementById("b9h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb9;
+        text1 = ""
+      }
+
+      else if (attemptsb9 == 0) {
+        document.getElementById("b9h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb9;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay salty"
+      text1 = "&#10060; Ang salty ay tumutukoy sa taong barinuhin.";
+    }
   }
 
   document.getElementById("b9").innerHTML = text;
+  document.getElementById("b9h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
+
 
 function b9hint1() {
-  document.getElementById("b9").innerHTML = "May limang letra";
+  document.getElementById("b9h").innerHTML = "May limang letra";
 }
 function b9hint2() {
-  document.getElementById("b9").innerHTML = "Sangkap sa pagluluto";
+  document.getElementById("b9h").innerHTML = "Sangkap sa pagluluto";
 }
 function b9hint3() {
-  document.getElementById("b9").innerHTML = "Katangian ng isang tao na may koneksyon sa mainitin ang ulo";
+  document.getElementById("b9h").innerHTML = "Katangian ng isang tao na may koneksyon sa mainitin ang ulo";
 }
 
 
+var attemptsb10 = 3;
 function balbal10() {
   var x, text;
 
@@ -503,27 +808,60 @@ function balbal10() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "bop") {
-    text = "&#x2705;   Ang bop tumutukoy sa magandang kanta na mapapasayaw ka.";
+    text1 = ""
+  } 
+
+  else if (l_case == "bop") {
+    score++;
+    text1 = "&#x2705; Ang bop tumutukoy sa magandang kanta na mapapasayaw ka.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang bop tumutukoy sa magandang kanta na mapapasayaw ka.";
+    if (attemptsb10 > 0) {
+      attemptsb10--;
+      if (attemptsb10 == 2) {
+        document.getElementById("b10h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb10;
+        text1 = ""
+      }
+
+      else if (attemptsb10 == 1) {
+        document.getElementById("b10h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb10;
+        text1 = ""
+      }
+
+      else if (attemptsb10 == 0) {
+        document.getElementById("b10h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb10;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay bop"
+      text1 = "&#10060; Ang bop tumutukoy sa magandang kanta na mapapasayaw ka.";
+    }
   }
 
   document.getElementById("b10").innerHTML = text;
+  document.getElementById("b10h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b10hint1() {
-  document.getElementById("b10").innerHTML = "May tatlong letra";
+  document.getElementById("b10h").innerHTML = "May tatlong letra";
 }
 function b10hint2() {
-  document.getElementById("b10").innerHTML = "Kasing tunog ng salitang 'pop'";
+  document.getElementById("b10h").innerHTML = "Kasing tunog ng salitang 'pop'";
 }
 function b10hint3() {
-  document.getElementById("b10").innerHTML = "Ang salitang ito ay may kaugnayan sa isang magandang kanta";
+  document.getElementById("b10h").innerHTML = "Ang salitang ito ay may kaugnayan sa isang magandang kanta";
 }
 
 
+var attemptsb11 = 3;
 function balbal11() {
   var x, text;
 
@@ -533,26 +871,60 @@ function balbal11() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "timbs") {
-    text = "&#x2705;   Ang timbs ay pagtatanong ng bakit.";
+    text1 = ""
+  } 
+
+  else if (l_case == "timbs") {
+    score++;
+    text1 = "&#x2705;   Ang timbs ay pagtatanong ng bakit.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang timbs ay pagtatanong ng bakit.";
+    if (attemptsb11 > 0) {
+      attemptsb11--;
+      if (attemptsb11 == 2) {
+        document.getElementById("b11h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb11;
+        text1 = ""
+      }
+
+      else if (attemptsb11 == 1) {
+        document.getElementById("b11h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb11;
+        text1 = ""
+      }
+
+      else if (attemptsb11 == 0) {
+        document.getElementById("b11h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb11;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay timbs"
+      text1 = "&#10060; Ang timbs ay pagtatanong ng bakit.";
+    }
   }
 
   document.getElementById("b11").innerHTML = text;
+  document.getElementById("b11h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b11hint1() {
-  document.getElementById("b11").innerHTML = "May limang letra";
+  document.getElementById("b11h").innerHTML = "May limang letra";
 }
 function b11hint2() {
-  document.getElementById("b11").innerHTML = "Malapit sa salitang 'timba'";
+  document.getElementById("b11h").innerHTML = "Malapit sa salitang 'timba'";
 }
 function b11hint3() {
-  document.getElementById("b11").innerHTML = "Ang salitang ito ay may kaugnayan sa katagang sinasabi sa pagtatanong ng dahilan";
+  document.getElementById("b11h").innerHTML = "Ang salitang ito ay may kaugnayan sa katagang sinasabi sa pagtatanong ng dahilan";
 }
 
+
+var attemptsb12 = 3;
 
 function balbal12() {
   var x, text;
@@ -563,26 +935,60 @@ function balbal12() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "awit") {
-    text = "&#x2705;   Ang awit ay pinagsamang aw at sakit.";
+    text1 = ""
+  } 
+
+  else if (l_case == "awit") {
+    score++;
+    text1 = "&#x2705; Ang awit ay pinagsamang aw at sakit.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang awit ay pinagsamang aw at sakit.";
+    if (attemptsb12 > 0) {
+      attemptsb12--;
+      if (attemptsb12 == 2) {
+        document.getElementById("b12h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb12;
+        text1 = ""
+      }
+
+      else if (attemptsb12 == 1) {
+        document.getElementById("b12h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb12;
+        text1 = ""
+      }
+
+      else if (attemptsb12 == 0) {
+        document.getElementById("b12h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb12;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay awit"
+      text1 = "&#10060; Ang awit ay pinagsamang aw at sakit.";
+    }
   }
 
   document.getElementById("b12").innerHTML = text;
+  document.getElementById("b12h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b12hint1() {
-  document.getElementById("b12").innerHTML = "May apat na letra";
+  document.getElementById("b12h").innerHTML = "May apat na letra";
 }
 function b12hint2() {
-  document.getElementById("b12").innerHTML = "Kadalasang sinasabi ng mga kabataan";
+  document.getElementById("b12h").innerHTML = "Kadalasang sinasabi ng mga kabataan";
 }
 function b12hint3() {
-  document.getElementById("b12").innerHTML = "Ang salitang ito ay may kaugnayan sa musika";
+  document.getElementById("b12h").innerHTML = "Ang salitang ito ay may kaugnayan sa musika";
 }
 
+
+var attemptsb13 = 3;
 
 function balbal13() {
   var x, text;
@@ -593,27 +999,61 @@ function balbal13() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "achoo") {
-    text = "&#x2705;   Ang achoo ay tumutukoy sa baklang mukhang straight.";
+    text1 = ""
+  } 
+
+  else if (l_case == "achoo") {
+    score++;
+    text1 = "&#x2705; Ang achoo ay tumutukoy sa baklang mukhang straight.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang achoo ay tumutukoy sa baklang mukhang straight.";
+    if (attemptsb13 > 0) {
+      attemptsb13--;
+      if (attemptsb13 == 2) {
+        document.getElementById("b13h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb13;
+        text1 = ""
+      }
+
+      else if (attemptsb13 == 1) {
+        document.getElementById("b13h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb13;
+        text1 = ""
+      }
+
+      else if (attemptsb13 == 0) {
+        document.getElementById("b13h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb13;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay achoo"
+      text1 = "&#10060; Ang achoo ay tumutukoy sa baklang mukhang straight.";
+    }
   }
 
   document.getElementById("b13").innerHTML = text;
+  document.getElementById("b13h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b13hint1() {
-  document.getElementById("b13").innerHTML = "May limang letra";
+  document.getElementById("b13h").innerHTML = "May limang letra";
 }
 function b13hint2() {
-  document.getElementById("b13").innerHTML = "Ito ay ekspresyon na nababanggit tuwing nababahing ang isang tao";
+  document.getElementById("b13h").innerHTML = "Ito ay ekspresyon na nababanggit tuwing nababahing ang isang tao";
 }
 function b13hint3() {
-  document.getElementById("b13").innerHTML = "Kasing tunog ng tunog ng sasakyang tren";
+  document.getElementById("b13h").innerHTML = "Kasing tunog ng tunog ng sasakyang tren";
 }
 
 
+
+var attemptsb14 = 3;
 function balbal14() {
   var x, text;
 
@@ -623,26 +1063,61 @@ function balbal14() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "tsimay") {
-    text = "&#x2705;   Ang tsimay ay tumutukoy sa katulong.";
+    text1 = ""
+  } 
+
+  else if (l_case == "tsimay") {
+    score++;
+    text1 = "&#x2705; Ang tsimay ay tumutukoy sa katulong.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang tsimay ay tumutukoy sa katulong.";
+    if (attemptsb14 > 0) {
+      attemptsb14--;
+      if (attemptsb14 == 2) {
+        document.getElementById("b14h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb14;
+        text1 = ""
+      }
+
+      else if (attemptsb14 == 1) {
+        document.getElementById("b14h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb14;
+        text1 = ""
+      }
+
+      else if (attemptsb14 == 0) {
+        document.getElementById("b14h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb14;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay tsimay"
+      text1 = "&#10060; Ang tsimay ay tumutukoy sa katulong.";
+    }
   }
 
   document.getElementById("b14").innerHTML = text;
+  document.getElementById("b14h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
+
 
 function b14hint1() {
-  document.getElementById("b14").innerHTML = "May 6 letra";
+  document.getElementById("b14h").innerHTML = "May 6 letra";
 }
 function b14hint2() {
-  document.getElementById("b14").innerHTML = "Kasing tunog ng salitang 'kamay'";
+  document.getElementById("b14h").innerHTML = "Kasing tunog ng salitang 'kamay'";
 }
 function b14hint3() {
-  document.getElementById("b14").innerHTML = "Kadalasang gumagawa ng gawaing bahay";
+  document.getElementById("b14h").innerHTML = "Kadalasang gumagawa ng gawaing bahay";
 }
 
+
+var attemptsb15 = 3;
 
 function balbal15() {
   var x, text;
@@ -653,26 +1128,60 @@ function balbal15() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "gumps") {
-    text = "&#x2705;   Ang gumps ay nangangahulugang salamat.";
+    text1 = ""
+  } 
+
+  else if (l_case == "gumps") {
+    score++;
+    text1 = "&#x2705; Ang gumps ay nangangahulugang salamat.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang gumps ay nangangahulugang salamat.";
+    if (attemptsb15 > 0) {
+      attemptsb15--;
+      if (attemptsb15 == 2) {
+        document.getElementById("b15h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb15;
+        text1 = ""
+      }
+
+      else if (attemptsb15 == 1) {
+        document.getElementById("b15h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb15;
+        text1 = ""
+      }
+
+      else if (attemptsb15 == 0) {
+        document.getElementById("b15h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb15;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay gumps"
+      text1 = "&#10060; Ang gumps ay nangangahulugang salamat.";
+    }
   }
 
   document.getElementById("b15").innerHTML = text;
+  document.getElementById("b15h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b15hint1() {
-  document.getElementById("b15").innerHTML = "Pagbati";
+  document.getElementById("b15h").innerHTML = "Pagbati";
 }
 function b15hint2() {
-  document.getElementById("b15").innerHTML = "May limang letra";
+  document.getElementById("b15h").innerHTML = "May limang letra";
 }
 function b15hint3() {
-  document.getElementById("b15").innerHTML = "Ito ay sinasabi matapos tulungan ang isang tao";
+  document.getElementById("b15h").innerHTML = "Ito ay sinasabi matapos tulungan ang isang tao";
 }
 
+
+var attemptsb16 = 3;
 
 function balbal16() {
   var x, text;
@@ -683,26 +1192,60 @@ function balbal16() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "pots") {
-    text = "&#x2705;   Ang pots ay nangangahulugang okay.";
+    text1 = ""
+  } 
+
+  else if (l_case == "pots") {
+    score++;
+    text1 = "&#x2705; Ang pots ay nangangahulugang okay.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang pots ay nangangahulugang okay.";
+    if (attemptsb16 > 0) {
+      attemptsb16--;
+      if (attemptsb16 == 2) {
+        document.getElementById("b16h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb16;
+        text1 = ""
+      }
+
+      else if (attemptsb16 == 1) {
+        document.getElementById("b16h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb16;
+        text1 = ""
+      }
+
+      else if (attemptsb16 == 0) {
+        document.getElementById("b16h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb16;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay pots"
+      text1 = "&#10060; Ang pots ay nangangahulugang okay.";
+    }
   }
 
   document.getElementById("b16").innerHTML = text;
+  document.getElementById("b16h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b16hint1() {
-  document.getElementById("b16").innerHTML = "Pagtugon";
+  document.getElementById("b16h").innerHTML = "Pagtugon";
 }
 function b16hint2() {
-  document.getElementById("b16").innerHTML = "May apat na letra";
+  document.getElementById("b16h").innerHTML = "May apat na letra";
 }
 function b16hint3() {
-  document.getElementById("b16").innerHTML = "Ginagamit upang ipahiwatig ang pagsang-ayon sa isang bagay";
+  document.getElementById("b16h").innerHTML = "Ginagamit upang ipahiwatig ang pagsang-ayon sa isang bagay";
 }
 
+
+var attemptsb17 = 3;
 
 function balbal17() {
   var x, text;
@@ -713,26 +1256,62 @@ function balbal17() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "caps") {
-    text = "&#x2705;   Ang caps ay nangangahulugang hindi totoo.";
+    text1 = ""
+  } 
+
+  else if (l_case == "caps") {
+    score++;
+    text1 = "&#x2705; Ang caps ay nangangahulugang hindi totoo.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang caps ay nangangahulugang hindi totoo.";
+    if (attemptsb17 > 0) {
+      attemptsb17--;
+      if (attemptsb17 == 2) {
+        document.getElementById("b17h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb17;
+        text1 = ""
+      }
+
+      else if (attemptsb17 == 1) {
+        document.getElementById("b17h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb17;
+        text1 = ""
+      }
+
+      else if (attemptsb17 == 0) {
+        document.getElementById("b17h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb17;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay caps"
+      text1 = "&#10060; Ang caps ay nangangahulugang hindi totoo.";
+    }
   }
 
   document.getElementById("b17").innerHTML = text;
+  document.getElementById("b17h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b17hint1() {
-  document.getElementById("b17").innerHTML = "Kabaliktaran ng katotohan";
+  document.getElementById("b17h").innerHTML = "Kabaliktaran ng katotohan";
 }
 function b17hint2() {
-  document.getElementById("b17").innerHTML = "May apat na letra";
+  document.getElementById("b17h").innerHTML = "May apat na letra";
 }
 function b17hint3() {
-  document.getElementById("b17").innerHTML = "Ito ay kawalan ng katunayan";
+  document.getElementById("b17h").innerHTML = "Ito ay kawalan ng katunayan";
 }
 
+
+
+
+var attemptsb18 = 3;
 
 function balbal18() {
   var x, text;
@@ -743,26 +1322,60 @@ function balbal18() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "sus") {
-    text = "&#x2705;   Ang sus ay nangangahulugang kahina-hinala.";
+    text1 = ""
+  } 
+
+  else if (l_case == "sus") {
+    score++;
+    text1 = "&#x2705; Ang sus ay nangangahulugang kahina-hinala.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang sus ay nangangahulugang kahina-hinala.";
+    if (attemptsb18 > 0) {
+      attemptsb18--;
+      if (attemptsb18 == 2) {
+        document.getElementById("b18h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb18;
+        text1 = ""
+      }
+
+      else if (attemptsb18 == 1) {
+        document.getElementById("b18h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb18;
+        text1 = ""
+      }
+
+      else if (attemptsb18 == 0) {
+        document.getElementById("b18h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb18;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay sus"
+      text1 = "&#10060; Ang sus ay nangangahulugang kahina-hinala.";
+    }
   }
 
   document.getElementById("b18").innerHTML = text;
+  document.getElementById("b18h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b18hint1() {
-  document.getElementById("b18").innerHTML = "Kilos ng isang tao";
+  document.getElementById("b18h").innerHTML = "Kilos ng isang tao";
 }
 function b18hint2() {
-  document.getElementById("b18").innerHTML = "May tatlo na letra";
+  document.getElementById("b18h").innerHTML = "May tatlo na letra";
 }
 function b18hint3() {
-  document.getElementById("b18").innerHTML = "Ang salitang ito ay may koneksiyon sa hindi mapaniniwalaan na kilos ng isang tao";
+  document.getElementById("b18h").innerHTML = "Ang salitang ito ay may koneksiyon sa hindi mapaniniwalaan na kilos ng isang tao";
 }
 
+
+var attemptsb19 = 3;
 
 function balbal19() {
   var x, text;
@@ -773,26 +1386,60 @@ function balbal19() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "mom jeans") {
-    text = "&#x2705;   Ang mom jeans ay tumutukoy sa taong sabog.";
+    text1 = ""
+  } 
+
+  else if (l_case == "mom jeans") {
+    score++;
+    text1 = "&#x2705; Ang mom jeans ay tumutukoy sa taong sabog.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang mom jeans ay tumutukoy sa taong sabog.";
+    if (attemptsb19 > 0) {
+      attemptsb19--;
+      if (attemptsb19 == 2) {
+        document.getElementById("b19h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb19;
+        text1 = ""
+      }
+
+      else if (attemptsb19 == 1) {
+        document.getElementById("b19h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb19;
+        text1 = ""
+      }
+
+      else if (attemptsb19 == 0) {
+        document.getElementById("b19h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb19;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay mom jeans"
+      text1 = "&#10060; Ang mom jeans ay tumutukoy sa taong sabog.";
+    }
   }
 
   document.getElementById("b19").innerHTML = text;
+  document.getElementById("b19h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b19hint1() {
-  document.getElementById("b19").innerHTML = "Mayroong malakas na tunog";
+  document.getElementById("b19h").innerHTML = "Mayroong malakas na tunog";
 }
 function b19hint2() {
-  document.getElementById("b19").innerHTML = "Dalawang salita at nagkakaroon ng walong letra";
+  document.getElementById("b19h").innerHTML = "Dalawang salita at nagkakaroon ng walong letra";
 }
 function b19hint3() {
-  document.getElementById("b19").innerHTML = "Maaaring ipahiwating na wala sa sarili o kaya ay ito ay kadalasang naririnig sa giyera";
+  document.getElementById("b19h").innerHTML = "Maaaring ipahiwating na wala sa sarili o kaya ay ito ay kadalasang naririnig sa giyera";
 }
 
+
+var attemptsb20 = 3;
 
 function balbal20() {
   var x, text;
@@ -803,26 +1450,60 @@ function balbal20() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "kopong-kopong") {
-    text = "&#x2705;   Ang kopong-kopong ay nangangahulugang makaluma.";
+    text1 = ""
+  } 
+
+  else if (l_case == "kopong-kopong") {
+    score++;
+    text1 = "&#x2705; Ang kopong-kopong ay nangangahulugang makaluma.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang kopong-kopong ay nangangahulugang makaluma.";
+    if (attemptsb20 > 0) {
+      attemptsb20--;
+      if (attemptsb20 == 2) {
+        document.getElementById("b20h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb20;
+        text1 = ""
+      }
+
+      else if (attemptsb20 == 1) {
+        document.getElementById("b20h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb20;
+        text1 = ""
+      }
+
+      else if (attemptsb20 == 0) {
+        document.getElementById("b20h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb20;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay kopong-kopong"
+      text1 = "&#10060; Ang kopong-kopong ay nangangahulugang makaluma.";
+    }
   }
 
   document.getElementById("b20").innerHTML = text;
+  document.getElementById("b20h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b20hint1() {
-  document.getElementById("b20").innerHTML = "Katunog ng ikalawang pantig sa tawag ng mga chinese sa larong table tennis";
+  document.getElementById("b20h").innerHTML = "Katunog ng ikalawang pantig sa tawag ng mga chinese sa larong table tennis";
 }
 function b20hint2() {
-  document.getElementById("b20").innerHTML = "Nauulit na salita at nagkakaroon ng labindalawa na letra";
+  document.getElementById("b20h").innerHTML = "Nauulit na salita at nagkakaroon ng labindalawa na letra";
 }
 function b20hint3() {
-  document.getElementById("b20").innerHTML = "Maaaring mainhalintulad sa antigong bagay, datihan at unang panahon";
+  document.getElementById("b20h").innerHTML = "Maaaring mainhalintulad sa antigong bagay, datihan at unang panahon";
 }
 
+
+var attemptsb21 = 3;
 
 function balbal21() {
   var x, text;
@@ -833,26 +1514,60 @@ function balbal21() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "boujee") {
-    text = "&#x2705;   Ang boujee ay nangangahulugang sosyal.";
+    text1 = ""
+  } 
+
+  else if (l_case == "boujee") {
+    score++;
+    text1 = "&#x2705; Ang boujee ay nangangahulugang sosyal.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang boujee ay nangangahulugang sosyal.";
+    if (attemptsb21 > 0) {
+      attemptsb21--;
+      if (attemptsb21 == 2) {
+        document.getElementById("b21h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb21;
+        text1 = ""
+      }
+
+      else if (attemptsb21 == 1) {
+        document.getElementById("b21h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb21;
+        text1 = ""
+      }
+
+      else if (attemptsb21 == 0) {
+        document.getElementById("b21h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb21;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay boujee"
+      text1 = "&#10060; Ang boujee ay nangangahulugang sosyal.";
+    }
   }
 
   document.getElementById("b21").innerHTML = text;
+  document.getElementById("b21h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b21hint1() {
-  document.getElementById("b21").innerHTML = "Katangian ng isang indibidwal";
+  document.getElementById("b21h").innerHTML = "Katangian ng isang indibidwal";
 }
 function b21hint2() {
-  document.getElementById("b21").innerHTML = "Mamahalin ang mga binibili";
+  document.getElementById("b21h").innerHTML = "Mamahalin ang mga binibili";
 }
 function b21hint3() {
-  document.getElementById("b21").innerHTML = "Magarang uri ng pamumuhay";
+  document.getElementById("b21h").innerHTML = "Magarang uri ng pamumuhay";
 }
 
+
+var attemptsb22 = 3;
 
 function balbal22() {
   var x, text;
@@ -863,26 +1578,60 @@ function balbal22() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "temakats") {
-    text = "&#x2705;   Ang temakats ay nangangahulugang makati.";
+    text1 = ""
+  } 
+
+  else if (l_case == "temakats") {
+    score++;
+    text1 = "&#x2705; Ang temakats ay nangangahulugang makati.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang temakats ay nangangahulugang makati.";
+    if (attemptsb22 > 0) {
+      attemptsb22--;
+      if (attemptsb22 == 2) {
+        document.getElementById("b22h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb22;
+        text1 = ""
+      }
+
+      else if (attemptsb22 == 1) {
+        document.getElementById("b22h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb22;
+        text1 = ""
+      }
+
+      else if (attemptsb22 == 0) {
+        document.getElementById("b22h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb22;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay temakats"
+      text1 = "&#10060; Ang temakats ay nangangahulugang makati.";
+    }
   }
 
   document.getElementById("b22").innerHTML = text;
+  document.getElementById("b22h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b22hint1() {
-  document.getElementById("b22").innerHTML = "Katunog ng isang lugar sa NCR";
+  document.getElementById("b22h").innerHTML = "Katunog ng isang lugar sa NCR";
 }
 function b22hint2() {
-  document.getElementById("b22").innerHTML = "Maaaring resulta ng pagkagat ng isang insekto";
+  document.getElementById("b22h").innerHTML = "Maaaring resulta ng pagkagat ng isang insekto";
 }
 function b22hint3() {
-  document.getElementById("b22").innerHTML = "Kinakamot";
+  document.getElementById("b22h").innerHTML = "Kinakamot";
 }
 
+
+var attemptsb23 = 3;
 
 function balbal23() {
   var x, text;
@@ -893,25 +1642,59 @@ function balbal23() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "awpit") {
-    text = "&#x2705;   Ang awpit ay pinagsamang aw at pangit.";
+    text1 = ""
+  } 
+
+  else if (l_case == "awpit") {
+    score++;
+    text1 = "&#x2705; Ang awpit ay pinagsamang aw at pangit.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang awpit ay pinagsamang aw at pangit.";
+    if (attemptsb23 > 0) {
+      attemptsb23--;
+      if (attemptsb23 == 2) {
+        document.getElementById("b23h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb23;
+        text1 = ""
+      }
+
+      else if (attemptsb23 == 1) {
+        document.getElementById("b23h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb23;
+        text1 = ""
+      }
+
+      else if (attemptsb23 == 0) {
+        document.getElementById("b23h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb23;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay awpit"
+      text1 = "&#10060; Ang awpit ay pinagsamang aw at pangit.";
+    }
   }
 
   document.getElementById("b23").innerHTML = text;
+  document.getElementById("b23h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b23hint1() {
-  document.getElementById("b23").innerHTML = "Pinagsamang salita";
+  document.getElementById("b23h").innerHTML = "Pinagsamang salita";
 }
 function b23hint2() {
-  document.getElementById("b23").innerHTML = "Ang unang pantig ay tunog na nagmumula sa aso";
+  document.getElementById("b23h").innerHTML = "Ang unang pantig ay tunog na nagmumula sa aso";
 }
 function b23hint3() {
-  document.getElementById("b23").innerHTML = "Ang ikalawang pantig ay mula sa salitang tumutukoy sa hindi kaaya-ayang itsura.";
+  document.getElementById("b23h").innerHTML = "Ang ikalawang pantig ay mula sa salitang tumutukoy sa hindi kaaya-ayang itsura.";
 }
+
+var attemptsb24 = 3;
 
 function balbal24() {
   var x, text;
@@ -922,26 +1705,60 @@ function balbal24() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "borlog") {
-    text = "&#x2705;   Ang borlog ay nangangahulugang tulog.";
+    text1 = ""
+  } 
+
+  else if (l_case == "borlog") {
+    score++;
+    text1 = "&#x2705; Ang borlog ay nangangahulugang tulog.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang borlog ay nangangahulugang tulog.";
+    if (attemptsb24 > 0) {
+      attemptsb24--;
+      if (attemptsb24 == 2) {
+        document.getElementById("b24h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb24;
+        text1 = ""
+      }
+
+      else if (attemptsb24 == 1) {
+        document.getElementById("b24h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb24;
+        text1 = ""
+      }
+
+      else if (attemptsb24 == 0) {
+        document.getElementById("b24h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb24;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay borlog"
+      text1 = "&#10060; Ang borlog ay nangangahulugang tulog.";
+    }
   }
 
   document.getElementById("b24").innerHTML = text;
+  document.getElementById("b24h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b24hint1() {
-  document.getElementById("b24").innerHTML = "Walang nalalaman";
+  document.getElementById("b24h").innerHTML = "Walang nalalaman";
 }
 function b24hint2() {
-  document.getElementById("b24").innerHTML = "Nakapikit";
+  document.getElementById("b24h").innerHTML = "Nakapikit";
 }
 function b24hint3() {
-  document.getElementById("b24").innerHTML = "Minsan humihilik";
+  document.getElementById("b24h").innerHTML = "Minsan humihilik";
 }
 
+
+var attemptsb25 = 3;
 
 function balbal25() {
   var x, text;
@@ -952,26 +1769,60 @@ function balbal25() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "ebubot") {
-    text = "&#x2705;   Ang ebubot ay babae.";
+    text1 = ""
+  } 
+
+  else if (l_case == "ebubot") {
+    score++;
+    text1 = "&#x2705; Ang ebubot ay babae.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang ebubot ay babae.";
+    if (attemptsb25 > 0) {
+      attemptsb25--;
+      if (attemptsb25 == 2) {
+        document.getElementById("b25h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb25;
+        text1 = ""
+      }
+
+      else if (attemptsb25 == 1) {
+        document.getElementById("b25h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb25;
+        text1 = ""
+      }
+
+      else if (attemptsb25 == 0) {
+        document.getElementById("b25h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb25;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay ebubot"
+      text1 = "&#10060; Ang ebubot ay babae.";
+    }
   }
 
   document.getElementById("b25").innerHTML = text;
+  document.getElementById("b25h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b25hint1() {
-  document.getElementById("b25").innerHTML = "Mahaba ang buhok";
+  document.getElementById("b25h").innerHTML = "Mahaba ang buhok";
 }
 function b25hint2() {
-  document.getElementById("b25").innerHTML = "Mataas ang boses";
+  document.getElementById("b25h").innerHTML = "Mataas ang boses";
 }
 function b25hint3() {
-  document.getElementById("b25").innerHTML = "Kasarian na kabaliktaran ng lalaki";
+  document.getElementById("b25h").innerHTML = "Kasarian na kabaliktaran ng lalaki";
 }
 
+
+var attemptsb26 = 3;
 
 function balbal26() {
   var x, text;
@@ -982,26 +1833,60 @@ function balbal26() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "epalas") {
-    text = "&#x2705;   Ang epalas ay salapi.";
+    text1 = ""
+  } 
+
+  else if (l_case == "epalas") {
+    score++;
+    text1 = "&#x2705; Ang epalas ay salapi.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang epalas ay salapi.";
+    if (attemptsb26 > 0) {
+      attemptsb26--;
+      if (attemptsb26 == 2) {
+        document.getElementById("b26h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb26;
+        text1 = ""
+      }
+
+      else if (attemptsb26 == 1) {
+        document.getElementById("b26h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb26;
+        text1 = ""
+      }
+
+      else if (attemptsb26 == 0) {
+        document.getElementById("b26h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb26;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay epalas"
+      text1 = "&#10060; Ang epalas ay salapi.";
+    }
   }
 
   document.getElementById("b26").innerHTML = text;
+  document.getElementById("b26h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b26hint1() {
-  document.getElementById("b26").innerHTML = "Mahalaga";
+  document.getElementById("b26h").innerHTML = "Mahalaga";
 }
 function b26hint2() {
-  document.getElementById("b26").innerHTML = "May iba’t ibang kulay";
+  document.getElementById("b26h").innerHTML = "May iba’t ibang kulay";
 }
 function b26hint3() {
-  document.getElementById("b26").innerHTML = "Pinambabayad";
+  document.getElementById("b26h").innerHTML = "Pinambabayad";
 }
 
+
+var attemptsb27 = 3;
 
 function balbal27() {
   var x, text;
@@ -1012,26 +1897,60 @@ function balbal27() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "tospik") {
-    text = "&#x2705;   Ang tospik ay sapatos.";
+    text1 = ""
+  } 
+
+  else if (l_case == "tospik") {
+    score++;
+    text1 = "&#x2705; Ang tospik ay sapatos.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang tospik ay sapatos.";
+    if (attemptsb27 > 0) {
+      attemptsb27--;
+      if (attemptsb27 == 2) {
+        document.getElementById("b27h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb27;
+        text1 = ""
+      }
+
+      else if (attemptsb27 == 1) {
+        document.getElementById("b27h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb27;
+        text1 = ""
+      }
+
+      else if (attemptsb27 == 0) {
+        document.getElementById("b27h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb27;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay tospik"
+      text1 = "&#10060; Ang tospik ay sapatos.";
+    }
   }
 
   document.getElementById("b27").innerHTML = text;
+  document.getElementById("b27h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b27hint1() {
-  document.getElementById("b27").innerHTML = "Kasama kahit saan pumunta";
+  document.getElementById("b27h").innerHTML = "Kasama kahit saan pumunta";
 }
 function b27hint2() {
-  document.getElementById("b27").innerHTML = "Kalimitang kinikolekta ng mga manlalaro";
+  document.getElementById("b27h").innerHTML = "Kalimitang kinikolekta ng mga manlalaro";
 }
 function b27hint3() {
-  document.getElementById("b27").innerHTML = "Sinusuot sa parting paa";
+  document.getElementById("b27h").innerHTML = "Sinusuot sa parting paa";
 }
 
+
+var attemptsb28 = 3;
 
 function balbal28() {
   var x, text;
@@ -1042,26 +1961,60 @@ function balbal28() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "sondo") {
-    text = "&#x2705;   Ang sondo ay piso.";
+    text1 = ""
+  } 
+
+  else if (l_case == "sondo") {
+    score++;
+    text1 = "&#x2705; Ang sondo ay piso.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang sondo ay piso.";
+    if (attemptsb28 > 0) {
+      attemptsb28--;
+      if (attemptsb28 == 2) {
+        document.getElementById("b28h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb28;
+        text1 = ""
+      }
+
+      else if (attemptsb28 == 1) {
+        document.getElementById("b28h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb28;
+        text1 = ""
+      }
+
+      else if (attemptsb28 == 0) {
+        document.getElementById("b28h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb28;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay sondo"
+      text1 = "&#10060; Ang sondo ay piso.";
+    }
   }
 
   document.getElementById("b28").innerHTML = text;
+  document.getElementById("b28h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b28hint1() {
-  document.getElementById("b28").innerHTML = "Kasingtunog ng 'sando'";
+  document.getElementById("b28h").innerHTML = "Kasingtunog ng 'sando'";
 }
 function b28hint2() {
-  document.getElementById("b28").innerHTML = "Isang uri ng pera";
+  document.getElementById("b28h").innerHTML = "Isang uri ng pera";
 }
 function b28hint3() {
-  document.getElementById("b28").innerHTML = "Katumbas ng 100 sentimos";
+  document.getElementById("b28h").innerHTML = "Katumbas ng 100 sentimos";
 }
 
+
+var attemptsb29 = 3;
 
 function balbal29() {
   var x, text;
@@ -1072,26 +2025,60 @@ function balbal29() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "mateluk") {
-    text = "&#x2705;   Ang mateluk ay nangangahulugang makulit.";
+    text1 = ""
+  } 
+
+  else if (l_case == "mateluk") {
+    score++;
+    text1 = "&#x2705; Ang mateluk ay nangangahulugang makulit.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang mateluk ay nangangahulugang makulit.";
+    if (attemptsb29 > 0) {
+      attemptsb29--;
+      if (attemptsb29 == 2) {
+        document.getElementById("b29h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb29;
+        text1 = ""
+      }
+
+      else if (attemptsb29 == 1) {
+        document.getElementById("b29h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb29;
+        text1 = ""
+      }
+
+      else if (attemptsb29 == 0) {
+        document.getElementById("b29h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb29;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay mateluk"
+      text1 = "&#10060; Ang mateluk ay nangangahulugang makulit.";
+    }
   }
 
   document.getElementById("b29").innerHTML = text;
+  document.getElementById("b29h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b29hint1() {
-  document.getElementById("b29").innerHTML = "May pitong na letra";
+  document.getElementById("b29h").innerHTML = "May pitong na letra";
 }
 function b29hint2() {
-  document.getElementById("b29").innerHTML = "Kadalasang sinasabi sa mga bata";
+  document.getElementById("b29h").innerHTML = "Kadalasang sinasabi sa mga bata";
 }
 function b29hint3() {
-  document.getElementById("b29").innerHTML = "Hindi mapakali o pagiging mapaglaro";
+  document.getElementById("b29h").innerHTML = "Hindi mapakali o pagiging mapaglaro";
 }
 
+
+var attemptsb30 = 3;
 
 function balbal30() {
   var x, text;
@@ -1102,26 +2089,60 @@ function balbal30() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "taratitat") {
-    text = "&#x2705;   Ang taratitat ay nangangahulugang madaldal.";
+    text1 = ""
+  } 
+
+  else if (l_case == "taratitat") {
+    score++;
+    text1 = "&#x2705; Ang taratitat ay nangangahulugang madaldal.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang taratitat ay nangangahulugang madaldal.";
+    if (attemptsb30 > 0) {
+      attemptsb30--;
+      if (attemptsb30 == 2) {
+        document.getElementById("b30h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb30;
+        text1 = ""
+      }
+
+      else if (attemptsb30 == 1) {
+        document.getElementById("b30h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb30;
+        text1 = ""
+      }
+
+      else if (attemptsb30 == 0) {
+        document.getElementById("b30h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb30;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay taratitat"
+      text1 = "&#10060; Ang taratitat ay nangangahulugang madaldal.";
+    }
   }
 
   document.getElementById("b30").innerHTML = text;
+  document.getElementById("b30h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b30hint1() {
-  document.getElementById("b30").innerHTML = "Isang katangian ng tao";
+  document.getElementById("b30h").innerHTML = "Isang katangian ng tao";
 }
 function b30hint2() {
-  document.getElementById("b30").innerHTML = "Hindi nauubusan ng sasabihin";
+  document.getElementById("b30h").innerHTML = "Hindi nauubusan ng sasabihin";
 }
 function b30hint3() {
-  document.getElementById("b30").innerHTML = "Masalita";
+  document.getElementById("b30h").innerHTML = "Masalita";
 }
 
+
+var attemptsb31 = 3;
 
 function balbal31() {
   var x, text;
@@ -1132,26 +2153,61 @@ function balbal31() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "papable") {
-    text = "&#x2705;   Ang papable ay matipunong lalaki.";
+    text1 = ""
+  } 
+
+  else if (l_case == "papable") {
+    score++;
+    text1 = "&#x2705; Ang papable ay matipunong lalaki.";
+    text = ""
   }
+
+
   else {
-    text = "&#10060;   Ang papable ay matipunong lalaki.";
+    if (attemptsb31 > 0) {
+      attemptsb31--;
+      if (attemptsb31 == 2) {
+        document.getElementById("b31h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb31;
+        text1 = ""
+      }
+
+      else if (attemptsb31 == 1) {
+        document.getElementById("b31h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb31;
+        text1 = ""
+      }
+
+      else if (attemptsb31 == 0) {
+        document.getElementById("b31h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb31;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay papable"
+      text1 = "&#10060; Ang papable ay matipunong lalaki.";
+    }
   }
 
   document.getElementById("b31").innerHTML = text;
+  document.getElementById("b31h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b31hint1() {
-  document.getElementById("b31").innerHTML = "May dalawang salita";
+  document.getElementById("b31h").innerHTML = "May dalawang salita";
 }
 function b31hint2() {
-  document.getElementById("b31").innerHTML = "Katangian ng isang lalaki";
+  document.getElementById("b31h").innerHTML = "Katangian ng isang lalaki";
 }
 function b31hint3() {
-  document.getElementById("b31").innerHTML = "Sinasabi sa isang may maganda katawan at gwapo ang itsura na lalaki";
+  document.getElementById("b31h").innerHTML = "Sinasabi sa isang may maganda katawan at gwapo ang itsura na lalaki";
 }
 
+
+var attemptsb32 = 3;
 
 function balbal32() {
   var x, text;
@@ -1162,26 +2218,60 @@ function balbal32() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "gurami") {
-    text = "&#x2705;   Ang gurami ay nangangahulugang matanda.";
+    text1 = ""
+  } 
+
+  else if (l_case == "gurami") {
+    score++;
+    text1 = "&#x2705; Ang gurami ay nangangahulugang matanda.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang gurami ay nangangahulugang matanda.";
+    if (attemptsb32 > 0) {
+      attemptsb32--;
+      if (attemptsb32 == 2) {
+        document.getElementById("b32h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb32;
+        text1 = ""
+      }
+
+      else if (attemptsb32 == 1) {
+        document.getElementById("b32h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb32;
+        text1 = ""
+      }
+
+      else if (attemptsb32 == 0) {
+        document.getElementById("b32h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb32;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay gurami"
+      text1 = "&#10060; Ang gurami ay nangangahulugang matanda.";
+    }
   }
 
   document.getElementById("b32").innerHTML = text;
+  document.getElementById("b32h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b32hint1() {
-  document.getElementById("b32").innerHTML = "May 6 na letra";
+  document.getElementById("b32h").innerHTML = "May 6 na letra";
 }
 function b32hint2() {
-  document.getElementById("b32").innerHTML = "Kabaliktaran ng 'bata'";
+  document.getElementById("b32h").innerHTML = "Kabaliktaran ng 'bata'";
 }
 function b32hint3() {
-  document.getElementById("b32").innerHTML = "May edad na";
+  document.getElementById("b32h").innerHTML = "May edad na";
 }
 
+
+var attemptsb33 = 3;
 
 function balbal33() {
   var x, text;
@@ -1192,26 +2282,60 @@ function balbal33() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "pampam") {
-    text = "&#x2705;   Ang pampam ay nangangahulugang papansin.";
+    text1 = ""
+  } 
+
+  else if (l_case == "pampam") {
+    score++;
+    text1 = "&#x2705; Ang pampam ay nangangahulugang papansin.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang pampam ay nangangahulugang papansin.";
+    if (attemptsb33 > 0) {
+      attemptsb33--;
+      if (attemptsb33 == 2) {
+        document.getElementById("b33h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb33;
+        text1 = ""
+      }
+
+      else if (attemptsb33 == 1) {
+        document.getElementById("b33h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb33;
+        text1 = ""
+      }
+
+      else if (attemptsb33 == 0) {
+        document.getElementById("b33h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb33;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay pampam"
+      text1 = "&#10060; Ang pampam ay nangangahulugang papansin.";
+    }
   }
 
   document.getElementById("b33").innerHTML = text;
+  document.getElementById("b33h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b33hint1() {
-  document.getElementById("b33").innerHTML = "Katangian ng isang tao";
+  document.getElementById("b33h").innerHTML = "Katangian ng isang tao";
 }
 function b33hint2() {
-  document.getElementById("b33").innerHTML = "May dalawang pantig";
+  document.getElementById("b33h").innerHTML = "May dalawang pantig";
 }
 function b33hint3() {
-  document.getElementById("b33").innerHTML = "Ginagamit ang salitang ito kapag may isang tao na kulang sa pansin";
+  document.getElementById("b33h").innerHTML = "Ginagamit ang salitang ito kapag may isang tao na kulang sa pansin";
 }
 
+
+var attemptsb34 = 3;
 
 function balbal34() {
   var x, text;
@@ -1222,26 +2346,60 @@ function balbal34() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "ksksks") {
-    text = "&#x2705;   Ang ksksks ay ang pagtawa nang gigil.";
+    text1 = ""
+  } 
+
+  else if (l_case == "ksksks") {
+    score++;
+    text1 = "&#x2705; Ang ksksks ay ang pagtawa nang gigil.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang ksksks ay ang pagtawa nang gigil.";
+    if (attemptsb34 > 0) {
+      attemptsb34--;
+      if (attemptsb34 == 2) {
+        document.getElementById("b34h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb34;
+        text1 = ""
+      }
+
+      else if (attemptsb34 == 1) {
+        document.getElementById("b34h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb34;
+        text1 = ""
+      }
+
+      else if (attemptsb34 == 0) {
+        document.getElementById("b34h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb34;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay ksksks"
+      text1 = "&#10060; Ang ksksks ay ang pagtawa nang gigil.";
+    }
   }
 
   document.getElementById("b34").innerHTML = text;
+  document.getElementById("b34h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b34hint1() {
-  document.getElementById("b34").innerHTML = "Isang uri ng reaksyon";
+  document.getElementById("b34h").innerHTML = "Isang uri ng reaksyon";
 }
 function b34hint2() {
-  document.getElementById("b34").innerHTML = "Katunog ng huni ng pusa";
+  document.getElementById("b34h").innerHTML = "Katunog ng huni ng pusa";
 }
 function b34hint3() {
-  document.getElementById("b34").innerHTML = "Ibang paraan ng pagtawa";
+  document.getElementById("b34h").innerHTML = "Ibang paraan ng pagtawa";
 }
 
+
+var attemptsb35 = 3;
 
 function balbal35() {
   var x, text;
@@ -1252,26 +2410,60 @@ function balbal35() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "chope") {
-    text = "&#x2705;   Ang chope ay nangangahulugang torpe. Ito ang tawag sa mga taong nahihiyang umamin o manligaw sa taong nagugustuhan nila.";
+    text1 = ""
+  } 
+
+  else if (l_case == "chope") {
+    score++;
+    text1 = "&#x2705; Ang chope ay nangangahulugang torpe. Ito ang tawag sa mga taong nahihiyang umamin o manligaw sa taong nagugustuhan nila.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang chope ay nangangahulugang torpe. Ito ang tawag sa mga taong nahihiyang umamin o manligaw sa taong nagugustuhan nila.";
+    if (attemptsb35 > 0) {
+      attemptsb35--;
+      if (attemptsb35 == 2) {
+        document.getElementById("b35h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb35;
+        text1 = ""
+      }
+
+      else if (attemptsb35 == 1) {
+        document.getElementById("b35h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb35;
+        text1 = ""
+      }
+
+      else if (attemptsb35 == 0) {
+        document.getElementById("b35h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb35;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay chope"
+      text1 = "&#10060; Ang chope ay nangangahulugang torpe. Ito ang tawag sa mga taong nahihiyang umamin o manligaw sa taong nagugustuhan nila.";
+    }
   }
 
   document.getElementById("b35").innerHTML = text;
+  document.getElementById("b35h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b35hint1() {
-  document.getElementById("b35").innerHTML = "Dalawang pantig";
+  document.getElementById("b35h").innerHTML = "Dalawang pantig";
 }
 function b35hint2() {
-  document.getElementById("b35").innerHTML = "Kadalasang pinanloloko sa mga lalaki";
+  document.getElementById("b35h").innerHTML = "Kadalasang pinanloloko sa mga lalaki";
 }
 function b35hint3() {
-  document.getElementById("b35").innerHTML = "Tumutukoy sa taong nahihiyang umamin sa taong nagugustuhan niya";
+  document.getElementById("b35h").innerHTML = "Tumutukoy sa taong nahihiyang umamin sa taong nagugustuhan niya";
 }
 
+
+var attemptsb36 = 3;
 
 function balbal36() {
   var x, text;
@@ -1282,26 +2474,60 @@ function balbal36() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "owshi") {
-    text = "&#x2705;   Ang ibigsabihin ng owshi ay mahal kita. Ito ang tawag sa salita upang ipahayag ang mas malalim pang nararamdaman sa isang tao.";
+    text1 = ""
+  } 
+
+  else if (l_case == "owshi") {
+    score++;
+    text1 = "&#x2705; Ang ibig sabihin ng owshi ay mahal kita. Ito ang tawag sa salita upang ipahayag ang mas malalim pang nararamdaman sa isang tao.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang ibigsabihin ng owshi ay mahal kita. Ito ang tawag sa salita upang ipahayag ang mas malalim pang nararamdaman sa isang tao.";
+    if (attemptsb36 > 0) {
+      attemptsb36--;
+      if (attemptsb36 == 2) {
+        document.getElementById("b36h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb36;
+        text1 = ""
+      }
+
+      else if (attemptsb36 == 1) {
+        document.getElementById("b36h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb36;
+        text1 = ""
+      }
+
+      else if (attemptsb36 == 0) {
+        document.getElementById("b36h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb36;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay owshi"
+      text1 = "&#10060; Ang ibig sabihin ng owshi ay mahal kita. Ito ang tawag sa salita upang ipahayag ang mas malalim pang nararamdaman sa isang tao.";
+    }
   }
 
   document.getElementById("b36").innerHTML = text;
+  document.getElementById("b36h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b36hint1() {
-  document.getElementById("b36").innerHTML = "Isang salitang may limang letra";
+  document.getElementById("b36h").innerHTML = "Isang salitang may limang letra";
 }
 function b36hint2() {
-  document.getElementById("b36").innerHTML = "Sinasabi kapag mahal mo ang isang tao";
+  document.getElementById("b36h").innerHTML = "Sinasabi kapag mahal mo ang isang tao";
 }
 function b36hint3() {
-  document.getElementById("b36").innerHTML = "Katunog nito ang salitang masarap sa Nihongo";
+  document.getElementById("b36h").innerHTML = "Katunog nito ang salitang masarap sa Nihongo";
 }
 
+
+var attemptsb37 = 3;
 
 function balbal37() {
   var x, text;
@@ -1312,25 +2538,60 @@ function balbal37() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "shawty") {
-    text = "&#x2705;   Shawty ang kadalasang tinatawag sa mga babaeng na nakabibighani dala ng gandang pisikal o mapa gandang kalooban.";
+    text1 = ""
+  } 
+
+  else if (l_case == "shawty") {
+    score++;
+    text1 = "&#x2705; Shawty ang kadalasang tinatawag sa mga babaeng na nakabibighani dala ng gandang pisikal o mapa gandang kalooban.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Shawty ang kadalasang tinatawag sa mga babaeng na nakabibighani dala ng gandang pisikal o mapa gandang kalooban.";
+    if (attemptsb37 > 0) {
+      attemptsb37--;
+      if (attemptsb37 == 2) {
+        document.getElementById("b37h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb37;
+        text1 = ""
+      }
+
+      else if (attemptsb37 == 1) {
+        document.getElementById("b37h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb37;
+        text1 = ""
+      }
+
+      else if (attemptsb37 == 0) {
+        document.getElementById("b37h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb37;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay shawty"
+      text1 = "&#10060; Shawty ang kadalasang tinatawag sa mga babaeng na nakabibighani dala ng gandang pisikal o mapa gandang kalooban.";
+    }
   }
 
   document.getElementById("b37").innerHTML = text;
+  document.getElementById("b37h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b37hint1() {
-  document.getElementById("b37").innerHTML = "Binubuo ng dalawang pantig";
+  document.getElementById("b37h").innerHTML = "Binubuo ng dalawang pantig";
 }
 function b37hint2() {
-  document.getElementById("b37").innerHTML = "Kadalasang tinatawag sa mga babae ngayon";
+  document.getElementById("b37h").innerHTML = "Kadalasang tinatawag sa mga babae ngayon";
 }
 function b37hint3() {
-  document.getElementById("b37").innerHTML = "Chics ang iba pang tawag dito";
+  document.getElementById("b37h").innerHTML = "Chics ang iba pang tawag dito";
 }
+
+
+var attemptsb38 = 3;
 
 function balbal38() {
   var x, text;
@@ -1341,26 +2602,60 @@ function balbal38() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "lit") {
-    text = "&#x2705;   Ang lit ay tumutukoy sa isang bagay kung ito ay maangas o nakabibilib.";
+    text1 = ""
+  } 
+
+  else if (l_case == "lit") {
+    score++;
+    text1 = "&#x2705; Ang lit ay tumutukoy sa isang bagay kung ito ay maangas o nakabibilib.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang lit ay tumutukoy sa isang bagay kung ito ay maangas o nakabibilib.";
+    if (attemptsb38 > 0) {
+      attemptsb38--;
+      if (attemptsb38 == 2) {
+        document.getElementById("b38h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb38;
+        text1 = ""
+      }
+
+      else if (attemptsb38 == 1) {
+        document.getElementById("b38h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb38;
+        text1 = ""
+      }
+
+      else if (attemptsb38 == 0) {
+        document.getElementById("b38h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb38;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay lit"
+      text1 = "&#10060; Ang lit ay tumutukoy sa isang bagay kung ito ay maangas o nakabibilib.";
+    }
   }
 
   document.getElementById("b38").innerHTML = text;
+  document.getElementById("b38h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b38hint1() {
-  document.getElementById("b38").innerHTML = "Isang salita lamang";
+  document.getElementById("b38h").innerHTML = "Isang salita lamang";
 }
 function b38hint2() {
-  document.getElementById("b38").innerHTML = "Binubuo ng isang pantig";
+  document.getElementById("b38h").innerHTML = "Binubuo ng isang pantig";
 }
 function b38hint3() {
-  document.getElementById("b38").innerHTML = "Pantukoy sa mga astig na bagay";
+  document.getElementById("b38h").innerHTML = "Pantukoy sa mga astig na bagay";
 }
 
+
+var attemptsb39 = 3;
 
 function balbal39() {
   var x, text;
@@ -1371,26 +2666,60 @@ function balbal39() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "paeklat") {
-    text = "&#x2705;   Ang paeklat ay tumutukoy sa pagiging OA o sobra sa dapat na emosyong maramdaman.";
+    text1 = ""
+  } 
+
+  else if (l_case == "paeklat") {
+    score++;
+    text1 = "&#x2705; Ang paeklat ay tumutukoy sa pagiging OA o sobra sa dapat na emosyong maramdaman.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang paeklat ay tumutukoy sa pagiging OA o sobra sa dapat na emosyong maramdaman.";
+    if (attemptsb39 > 0) {
+      attemptsb39--;
+      if (attemptsb39 == 2) {
+        document.getElementById("b39h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb39;
+        text1 = ""
+      }
+
+      else if (attemptsb39 == 1) {
+        document.getElementById("b39h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb39;
+        text1 = ""
+      }
+
+      else if (attemptsb39 == 0) {
+        document.getElementById("b39h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb39;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay paeklat"
+      text1 = "&#10060; Ang paeklat ay tumutukoy sa pagiging OA o sobra sa dapat na emosyong maramdaman.";
+    }
   }
 
   document.getElementById("b39").innerHTML = text;
+  document.getElementById("b39h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b39hint1() {
-  document.getElementById("b39").innerHTML = "Binubuo ng tatlong pantig";
+  document.getElementById("b39h").innerHTML = "Binubuo ng tatlong pantig";
 }
 function b39hint2() {
-  document.getElementById("b39").innerHTML = "Nangangahulugang sobra sa dapat na emosyong maramdaman";
+  document.getElementById("b39h").innerHTML = "Nangangahulugang sobra sa dapat na emosyong maramdaman";
 }
 function b39hint3() {
-  document.getElementById("b39").innerHTML = "Katunog ng peklat";
+  document.getElementById("b39h").innerHTML = "Katunog ng peklat";
 }
 
+
+var attemptsb40 = 3;
 
 function balbal40() {
   var x, text;
@@ -1401,22 +2730,72 @@ function balbal40() {
 
   if (l_case == "") {
     text = "Punan ang patlang ng salitang balbal.";
-  } else if (l_case == "waswas") {
-    text = "&#x2705;   Ang waswas ay tumutukoy sa salitang asawa.";
+    text1 = ""
+  } 
+
+  else if (l_case == "waswas") {
+    score++;
+    text1 = "&#x2705; Ang waswas ay tumutukoy sa salitang asawa.";
+    text = ""
   }
+
   else {
-    text = "&#10060;   Ang waswas ay tumutukoy sa salitang asawa.";
+    if (attemptsb40 > 0) {
+      attemptsb40--;
+      if (attemptsb40 == 2) {
+        document.getElementById("b40h1").style.visibility = "visible";
+        text = "&#10060; Attempts = " + attemptsb40;
+        text1 = ""
+      }
+
+      else if (attemptsb40 == 1) {
+        document.getElementById("b40h2").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb40;
+        text1 = ""
+      }
+
+      else if (attemptsb40 == 0) {
+        document.getElementById("b40h3").style.visibility = "visible";
+        text = "&#10060; Attempt = " + attemptsb40;
+        text1 = ""
+      }
+    }
+
+    else {
+      text = "Ang tamang sagot ay waswas"
+      text1 = "&#10060; Ang waswas ay tumutukoy sa salitang asawa.";
+    }
   }
 
   document.getElementById("b40").innerHTML = text;
+  document.getElementById("b40h").innerHTML = text1;
+  document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 function b40hint1() {
-  document.getElementById("b40").innerHTML = "Katunog ng salitang hugas sa ingles";
+  document.getElementById("b40h").innerHTML = "Katunog ng salitang hugas sa ingles";
 }
 function b40hint2() {
-  document.getElementById("b40").innerHTML = "Ang unang pantig ay past tense ng 'is'";
+  document.getElementById("b40h").innerHTML = "Ang unang pantig ay past tense ng 'is'";
 }
 function b40hint3() {
-  document.getElementById("b40").innerHTML = "Magkatulad bigkasin ang unang pantig at ikalawang pantig";
+  document.getElementById("b40h").innerHTML = "Magkatulad bigkasin ang unang pantig at ikalawang pantig";
+}
+
+
+function finalScore() {
+
+  document.getElementById("slideshow-inner").style.visibility = "hidden";
+  document.getElementById("hidden").style.display = "flex";
+
+  if (score < 8) {
+    document.getElementById("next").style.display = "none";
+    document.getElementById("h1").innerHTML = "xadd";
+    document.getElementById("myScore").innerHTML = "Ang iyong score ay " + score;
+  }
+
+  else {
+    document.getElementById("h1").innerHTML = "yey";
+    document.getElementById("myScore").innerHTML = "Ang iyong score ay " + score;
+  }
 }
