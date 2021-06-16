@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BALBAL</title>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script type="text/javascript" src="balbal1.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" text="css/text" href="balbal1.css">
+
+
+</head>
+
+<body>
+
+<!-- <h1 id = "score">Score: 0</h1> -->
+
+<main class="main-content">
+  <section class="slideshow">
+
+    <div class= "hidden" id="hidden"> 
+      <div class=content>
+        <div class="wrapper-1">
+          <h1 id="h1" class="h1"></h1>
+          <p id="myScore"></p>
+          <button class="hidden_btn" id="refresh" onClick="window.location.reload();">Wala, ulit ka ulit</button>   
+          <button class="hidden_btn" id="next" onClick="location.href='balbal4.html'">next na</button>       
+        </div>
+      </div>
+    </div>
+
+    <div class="slideshow-inner" id="slideshow-inner">
+      <h1 id = "score">Score: 0</h1>
+      <div class="slides">
+      	<div class="slide is-active">	
+      		<div class="slide-content">
+            <h1 class="no">1/10</h1>
+            <a class="back" href="index.html">Bumalik</a>
+            <div class="caption">
+              <div class="title">👻 + 🚌</div>
+              <div class="text">
+                <div class="row">
+                  <input class="input" id="balbal21" type="text" name="name">
+                  <button class="submit" type="button" onclick="balbal21()">Submit</button>
+                </div>
+              </div> 
+              <div class="btn-group">
+                <button class="hint" id="b21h1" onclick="b21hint1()">Hint #1</button>
+                <button class="hint" id="b21h2" onclick="b21hint2()">Hint #2</button>
+                <button class="hint" id="b21h3" onclick="b21hint3()">Hint #3</button>
+              </div>
+              <p class= "balbal" id="b21">Attempts: 3</p>
+              <p class= "balbalh" id="b21h"></p>
+            </div>
+          </div>
+          <div class="image-container"> 
+            <img src="https://www.meme-arsenal.com/memes/d0dea5755f08c9628bae9c9998e3a6e3.jpg" alt="" class="image" />
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-content">
+            <h1 class="no">2/10</h1>
+            <a class="back" href="index.html">Bumalik</a>
+            <div class="caption">
+              <div class="title">👧 👩 🐈 🐈</div>
+              <div class="text">
+                <div class="row">
+                  <input class="input" id="balbal22" type="text" name="name">
+                  <button class="submit" type="button" onclick="balbal22()">Submit</button>
+                </div>
+              </div> 
+              <div class="btn-group">
+                <button class="hint" id="b22h1" onclick="b22hint1()">Hint #1</button>
+                <button class="hint" id="b22h2" onclick="b22hint2()">Hint #2</button>
+                <button class="hint" id="b22h3" onclick="b22hint3()">Hint #3</button>
+              </div>
+              <p class= "balbal" id="b22">Attempts: 3</p>
+              <p class= "balbalh" id="b22h"></p>
+            </div>
+          </div>
+          <div class="image-container"> 
+            <img src="https://us.123rf.com/450wm/viktoriia88/viktoriia882006/viktoriia88200601818/149785775-plain-dark-blue-fabric-as-background-close-up.jpg?ver=6" alt="" class="image" />
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-content">
+            <h1 class="no">3/10</h1>
+            <a class="back" href="index.html">Bumalik</a>
+            <div class="caption">
+              <div class="title">🐶 + 👣</div>
+              <div class="text">
+                <div class="row">
+                  <input class="input" id="balbal23" type="text" name="name">
+                  <button class="submit" type="button" onclick="balbal23()">Submit</button>
+                </div>
+              </div> 
+              <div class="btn-group">
+                <button class="hint" id="b23h1" onclick="b23hint1()">Hint #1</button>
+                <button class="hint" id="b23h2" onclick="b23hint2()">Hint #2</button>
+                <button class="hint" id="b23h3" onclick="b23hint3()">Hint #3</button>
+              </div>
+              <p class= "balbal" id="b23">Attempts: 3</p>
+              <p class= "balbalh" id="b23h"></p>
+            </div>
+          </div>
+          <div class="image-container"> 
+            <img src="https://www.xmple.com/wallpaper/single-one-colour-solid-color-plain-azure-1920x1080-c-081c24-f-24.svg" alt="" class="image" />
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-content">
+            <h1 class="no">4/10</h1>
+            <a class="back" href="index.html">Bumalik</a>
+            <div class="caption">
+              <div class="title">🐗 📉 🇬</div>
+              <div class="text">
+                <div class="row">
+                  <input class="input" id="balbal24" type="text" name="name">
+                  <button class="submit" type="button" onclick="balbal24()">Submit</button>
+                </div>
+              </div> 
+              <div class="btn-group">
+                <button class="hint" id="b24h1" onclick="b24hint1()">Hint #1</button>
+                <button class="hint" id="b24h2" onclick="b24hint2()">Hint #2</button>
+                <button class="hint" id="b24h3" onclick="b24hint3()">Hint #3</button>
+              </div>
+              <p class= "balbal" id="b24">Attempts: 3</p>
+              <p class= "balbalh" id="b24h"></p>
+            </div>
+          </div>
+          <div class="image-container"> 
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfMZHZ_D8GpGdLz6_FbztBzgoWxb7CU6L06g&usqp=CAU.jpg" alt="" class="image" />
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-content">
+            <h1 class="no">5/10</h1>
+            <a class="back" href="index.html">Bumalik</a>
+            <div class="caption">
+              <div class="title">&#129328; &#128589; &#128698;</div>
+              <div class="text">
+                <div class="row">
+                  <input class="input" id="balbal25" type="text" name="name">
+                  <button class="submit" type="button" onclick="balbal25()">Submit</button>
+                </div>
+              </div> 
+              <div class="btn-group">
+                <button class="hint" id="b25h1" onclick="b25hint1()">Hint #1</button>
+                <button class="hint" id="b25h2" onclick="b25hint2()">Hint #2</button>
+                <button class="hint" id="b25h3" onclick="b25hint3()">Hint #3</button>
+              </div>
+              <p class= "balbal" id="b25">Attempts: 3</p>
+              <p class= "balbalh" id="b25h"></p>
+            </div>
+          </div>
+          <div class="image-container"> 
+            <img src="https://cdn.nohat.cc/thumb/f/720/13ae74925c32402dbbd3.jpg" alt="" class="image" />
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-content">
+            <h1 class="no">6/10</h1>
+            <a class="back" href="index.html">Bumalik</a>
+            <div class="caption">
+              <div class="title">&#128184; &#128178; &#128178;</div>
+              <div class="text">
+                <div class="row">
+                  <input class="input" id="balbal26" type="text" name="name">
+                  <button class="submit" type="button" onclick="balbal26()">Submit</button>
+                </div>
+              </div> 
+              <div class="btn-group">
+                <button class="hint" id="b26h1" onclick="b26hint1()">Hint #1</button>
+                <button class="hint" id="b26h2" onclick="b26hint2()">Hint #2</button>
+                <button class="hint" id="b26h3" onclick="b26hint3()">Hint #3</button>
+              </div>
+              <p class= "balbal" id="b26">Attempts: 3</p>
+              <p class= "balbalh" id="b26h"></p>
+            </div>
+          </div>
+          <div class="image-container"> 
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvn6KWw2FisRaSr4_8L7ofKFYefHrzm3C6vQ&usqp=CAU.jpg" alt="" class="image" />
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-content">
+            <h1 class="no">7/10</h1>
+            <a class="back" href="index.html">Bumalik</a>
+            <div class="caption">
+              <div class="title">&#129510; &#128094; &#128098;</div>
+              <div class="text">
+                <div class="row">
+                  <input class="input" id="balbal27" type="text" name="name">
+                  <button class="submit" type="button" onclick="balbal27()">Submit</button>
+                </div>
+              </div> 
+              <div class="btn-group">
+                <button class="hint" id="b27h1" onclick="b27hint1()">Hint #1</button>
+                <button class="hint" id="b27h2" onclick="b27hint2()">Hint #2</button>
+                <button class="hint" id="b27h3" onclick="b27hint3()">Hint #3</button>
+              </div>
+              <p class= "balbal" id="b27">Attempts: 3</p>
+              <p class= "balbalh" id="b27h"></p>
+            </div>
+          </div>
+          <div class="image-container"> 
+            <img src="https://wallpapersprinted.com/thumb/thumbs/2021/plain_dark_navy_blue_hd_navy_blue-t2.jpg" alt="" class="image" />
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-content">
+            <h1 class="no">8/10</h1>
+            <a class="back" href="index.html">Bumalik</a>
+            <div class="caption">
+              <div class="title">🎽</div>
+              <div class="text">
+                <div class="row">
+                  <input class="input" id="balbal28" type="text" name="name">
+                  <button class="submit" type="button" onclick="balbal28()">Submit</button>
+                </div>
+              </div> 
+              <div class="btn-group">
+                <button class="hint" id="b28h1" onclick="b28hint1()">Hint #1</button>
+                <button class="hint" id="b28h2" onclick="b28hint2()">Hint #2</button>
+                <button class="hint" id="b28h3" onclick="b28hint3()">Hint #3</button>
+              </div>
+              <p class= "balbal" id="b28">Attempts: 3</p>
+              <p class= "balbalh" id="b28h"></p>
+            </div>
+          </div>
+          <div class="image-container"> 
+            <img src="https://getwallpapers.com/wallpaper/full/e/c/f/161033.jpg" alt="" class="image" />
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-content">
+            <h1 class="no">9/10</h1>
+            <a class="back" href="index.html">Bumalik</a>
+            <div class="caption">
+              <div class="title">➕ ➖ ✖️ ➗ 👀</div>
+              <div class="text">
+                <div class="row">
+                  <input class="input" id="balbal29" type="text" name="name">
+                  <button class="submit" type="button" onclick="balbal29()">Submit</button>
+                </div>
+              </div> 
+              <div class="btn-group">
+                <button class="hint" id="b29h1" onclick="b29hint1()">Hint #1</button>
+                <button class="hint" id="b29h2" onclick="b29hint2()">Hint #2</button>
+                <button class="hint" id="b29h3" onclick="b29hint3()">Hint #3</button>
+              </div>
+              <p class= "balbal" id="b29">Attempts: 3</p>
+              <p class= "balbalh" id="b29h"></p>
+            </div>
+          </div>
+          <div class="image-container"> 
+            <img src="https://i.pinimg.com/originals/81/1e/f3/811ef34419f0db8d96f9074b88496113.png" alt="" class="image" />
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-content">
+            <h1 class="no">10/10</h1>
+            <button class="check" onclick="finalScore()">hakdog</button>
+            <a class="back" href="index.html">Bumalik</a>
+            <div class="caption">
+              <div class="title">🚥 👩 ➕ ☕</div>
+              <div class="text">
+                <div class="row">
+                  <input class="input" id="balbal30" type="text" name="name">
+                  <button class="submit" type="button" onclick="balbal30()">Submit</button>
+                </div>
+              </div> 
+              <div class="btn-group">
+                <button class="hint" id="b30h1" onclick="b30hint1()">Hint #1</button>
+                <button class="hint" id="b30h2" onclick="b30hint2()">Hint #2</button>
+                <button class="hint" id="b30h3" onclick="b30hint3()">Hint #3</button>
+              </div>
+              <p class= "balbal" id="b30">Attempts: 3</p>
+              <p class= "balbalh" id="b30h"></p>
+            </div>
+          </div>
+          <div class="image-container"> 
+            <img src="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm27-ning-43-background.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=253384c72ad56738161cceb93e0698f0.jpg" alt="" class="image" />
+          </div>
+        </div>
+
+        </div>
+
+      <div class="pagination">
+        <div class="item is-active"> 
+          <span class="icon">1</span>
+        </div>
+        <div class="item">
+          <span class="icon">2</span>
+        </div>
+        <div class="item">
+          <span class="icon">3</span>
+        </div>
+        <div class="item">
+          <span class="icon">4</span>
+        </div>
+        <div class="item">
+          <span class="icon">5</span>
+        </div>
+        <div class="item">
+          <span class="icon">6</span>
+        </div>
+        <div class="item">
+          <span class="icon">7</span>
+        </div>
+        <div class="item">
+          <span class="icon">8</span>
+        </div>
+        <div class="item">
+          <span class="icon">9</span>
+        </div>
+        <div class="item">
+          <span class="icon">10</span>
+        </div>
+
+
+        
+      </div>
+
+      <div class="arrows">
+        <div class="arrow prev">
+          <span class="svg svg-arrow-left">
+            <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
+            <span class="alt sr-only"></span>
+          </span>
+        </div>
+        <div class="arrow next">
+          <span class="svg svg-arrow-right">
+            <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
+            <span class="alt sr-only"></span>
+          </span>
+        </div>
+      </div>
+    </div> 
+  </section>
+</main>
+
+</body>
+</html>
