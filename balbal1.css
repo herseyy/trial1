@@ -464,16 +464,17 @@ a {
 }
 
 .h1{
-  font-size:50px;
-  border: 1px solid blue;
+  font-size:45px;
+  /*border: 1px solid blue;*/
 }
 .wrapper-1 p{
   font-size:20px;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 .hidden_btn{
   margin:18px 0;
 }
+
 
 
 
