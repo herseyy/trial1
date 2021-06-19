@@ -1,6 +1,6 @@
 header {
   background-color: #34262B;
-  background: url('https://assets.entrepreneur.com/content/3x2/2000/20190102161219-GettyImages-904000456.jpeg') no-repeat center center fixed;
+  background: url('https://assets.entrepreneur.com/content/3x2/2000/20190102161219-GettyImages-904000456.jpeg') no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8,7 +8,7 @@ header {
   
 }
 .more-space {
-  margin-bottom: 120px;
+  margin-bottom: 150px;
   margin-top: 120px;
   /*border: 1px solid orange;*/
 }
@@ -126,6 +126,7 @@ nav ul li {
   background: rgba(0, 0, 0, 0);
 }
 /**Navbar customs end**/
+
 /***  balballers  ****/
 .about-us {
   background-color: #34262B;
@@ -133,14 +134,34 @@ nav ul li {
 .about-us h1 {
   color: #C1292E;
   font-size: 60px;
-  margin-top: 80px;
+  margin: 80px 80px 50px 80px;
   /*border: 1px solid yellow;*/
 }
 .about-us-p {
   font-size: 23px;
   color: #FDFFFC;
-  margin: 50px 15px 13% 15px;
-  /*border: 1px solid blue;*/
+  margin: 0px 50px 13% 50px;
+  /*margin: 50px 40px 13% 40px;*/
+  /*border: 1px solid:blue;*/
+}
+
+.about-us2 {
+  background-color: #000036;
+  padding-bottom: 80px;
+}
+.about-us2 h1 {
+  color: #c1292e;
+  font-size: 60px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+
+.about-us-p2 {
+  font-size: 20px;
+  color: #FDFFFC;
+  margin: 30px 20px 10px 20px;
+  /*border: 1px solid violet;*/
 }
 
 .descript {
@@ -148,13 +169,6 @@ nav ul li {
 }
 
 /*======== BREAK ====*/
-.break1 {
-  background: url(https://images2.minutemediacdn.com/image/upload/c_crop,h_1349,w_2400,x_0,y_251/f_auto,q_auto,w_1110/v1621444242/shape/mentalfloss/gettyimages-164943672.jpg) center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 .break2 {
   background: url(https://images2.minutemediacdn.com/image/upload/c_crop,h_1349,w_2400,x_0,y_251/f_auto,q_auto,w_1110/v1621444242/shape/mentalfloss/gettyimages-164943672.jpg) center center fixed;
   -webkit-background-size: cover;
@@ -166,24 +180,8 @@ nav ul li {
   color: #f2f2f2;
   font-size: 70px;
   font-weight: bold;
-  margin-top: 10%;
-  margin-bottom: 10%;
-}
-.break1 h3 {
-  color: #f2f2f2;
-  font-size: 70px;
-  font-weight: bold;
-  margin-top: 10%;
-  margin-bottom: 10%;
-}
-/*========= emoji ======*/
-.about-us2 {
-  background-color: #000036;
-}
-.about-us2 h1 {
-  color: #c1292e;
-  font-size: 60px;
-  margin-top: 80px;
+  margin-top: 8%;
+  margin-bottom: 8%;
 }
 
 
@@ -223,35 +221,27 @@ header h4 {
 }
 
 
-.about-us h1 {
+.about-us h1, .about-us2 h1 {
   font-size: 40px;
-  margin: 60px 25px 50px 25px;
+  margin: 60px 50px 50px 50px;
   /*border: 1px solid black;*/
 }
 .about-us-p {
-  font-size: 20px;
+  font-size: 18px;
   margin-left: 18px;
   margin-right: 18px;
   /*border: 1px solid violet;*/
 }
 
-.about-us2 h1 {
-  font-size: 40px;
-  margin: 60px 25px 50px 25px;
-  /*border: 1px solid black;*/
-}
-
-
-.about-us-p {
-  font-size: 20px;
-  margin-left: 18px;
-  margin-right: 18px;
+.about-us-p2 {
+  font-size: 18px;
+  margin: 30px 20px 10px 20px;
   /*border: 1px solid violet;*/
 }
+
+
 
 .break2 h3 {
   font-size: 60px;
 }
-.break1 h3 {
-  font-size: 60px;
-}
+
