@@ -1,6 +1,13 @@
+body {
+  font: 14px/2 "Open sans", sans-serif;
+  height: auto;
+  width: 100%;
+  margin: 0;
+}
+
 header {
   background-color: #34262B;
-  background: url('https://www.streetsoftheworld.com/shop/546/philippines-manila.jpg') no-repeat center fixed;
+  background: url('https://www.streetsoftheworld.com/shop/546/philippines-manila.jpg') no-repeat center fixed;a
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -247,6 +254,6 @@ header h4 {
 
 
 .break2 h3 {
-  font-size: 60px;
+  font-size: 50px;
 }
 
