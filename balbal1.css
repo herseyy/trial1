@@ -334,16 +334,16 @@ body {
 
 .h1{
   font-family: 'Kaushan Script', cursive;
-  font-size:5em;
-  /*letter-spacing:3px;*/
+  font-size:70px;
+  letter-spacing:3px;
   color:#5892FF ;
   margin:0;
-  margin-bottom:20px;
+  /*margin-bottom:20px;*/
   border: 1px solid blue;
 }
 .wrapper-1 p{
   margin:0;
-  font-size:1.7em;
+  font-size: 30px;
   color:#808080;
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing:1px;
@@ -381,7 +381,7 @@ a {
 
 
 .slideshow .slide .title {
-  margin-top: 70px;
+  margin-top: 50px;
   font: 300 35px/1.2 "Oswald", sans-serif;
   /*border: 1px solid pink;*/
 }
@@ -461,6 +461,18 @@ a {
   width: 25px;
   height: 3px;
   /*border: 1px solid orange;*/
+}
+
+.h1{
+  font-size:50px;
+  border: 1px solid blue;
+}
+.wrapper-1 p{
+  font-size:20px;
+  border: 1px solid red;
+}
+.hidden_btn{
+  margin:3px 0;
 }
 
 
