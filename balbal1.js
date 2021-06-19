@@ -2794,6 +2794,7 @@ function finalScore() {
   document.getElementById("hidden").style.display = "flex";
 
   if (score < 8) {
+    document.getElementById("next").style.display = "none";
     document.getElementById("h1").innerHTML = "Bonak, HAHA ulit";
     document.getElementById("myScore").innerHTML = "Ang iyong score ay " + score;
   }
