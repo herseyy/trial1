@@ -52,12 +52,12 @@ body {
   /*border: 1px solid purple;*/
 }
 .slideshow .slide .image-container {
+  background: url("https://i.pinimg.com/originals/93/8b/a9/938ba925943764901f2c2889ea835d42.jpg") no-repeat center center fixed;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-position: center;
   z-index: 1;
   background-size: cover;
   image-rendering: optimizeQuality;
@@ -100,14 +100,6 @@ body {
   z-index: 10;
 }
 
-.no {
-  font-size: 20px;
-  color: white;
-  position: absolute;
-  top: 15px;
-  right: 10px;
-  z-index: 10;
-}
 
 .back {
   font-size: 23px;
@@ -117,19 +109,10 @@ body {
   left: 10px;
 }
 
-.check {
-  padding: 3px 10px 3px 3px;
-  cursor: pointer;
-  font-size: 23px;
-  position: absolute;
-  top: 80px;
-  right: 0px;
-  z-index: 10;
-}
 
 .slideshow .slide .title {
   color: #D0D0D0;
-  margin-top: 30px;
+  margin-top: 70px;
   margin-left: -15%;
   width: 130%;
   font: 300 50px/1.2 "Oswald", sans-serif;
@@ -160,12 +143,12 @@ body {
   width: 15vw;
   background-color: #32CD32;
   color: black;
-  padding: 12px 8px 12px 8px;
+  padding: 11px 8px 13px 8px;
   text-align: center;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 15px;
   /*border: 1px solid blue;*/
 }
 
@@ -184,26 +167,51 @@ body {
   clear: both;
 }
 .btn-group {
-  margin-top: 23px;
+  margin-top: 10px;
   /*border: 1px solid #f1f1f1;*/
 }
 
 
 .balbal {
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 15px;
   height: 30px;
   color: red;
   background-color: #E0E0E0;
+  border: 1px solid blue;
 }
 
 .balbalh {
+  margin: 0px;
   height: 35vh;
   font-size: 25px;
-    text-align: center;
+  text-align: center;
   width: 70vw;
   color: white;
-  /*border: 1px solid yellow;*/
+  border: 1px solid yellow;
+}
+
+.check {
+  font-size: 23px;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  justify-content: center;
+  background-color: #32CD32;
+  padding: 8px 16px;
+  font-family: "Lucida Console", Monaco, monospace;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0   green;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  z-index: 10;
+}
+
+
+.check:hover{
+  box-shadow: inset 0 100px 0 0  green;
+  color: white;
 }
 
 .btn-group .hint {
@@ -274,18 +282,18 @@ body {
   display: inline-block;
   position: relative;
   width: 40px;
-  height: 20px;
+  height: 10px;
   cursor: pointer;
   text-indent: -999em;
   z-index: 1;
-  /*border: 1px solid blue;*/
+  border: 1px solid blue;
 }
 
 .slideshow .pagination .item + .page {
   margin-left: -2px;
 }
 .slideshow .pagination .item::before {
-  content: "asdasd";
+  content: "";
   display: block;
   position: absolute;
   top: 7px;
@@ -320,16 +328,18 @@ body {
   text-align:center;
   max-width:620px;
   margin: 50px auto;
+  border: 1px solid yellow;
   box-shadow: 4px 8px 40px 8px rgba(88, 146, 255, 0.2);
 }
 
 .h1{
-    font-family: 'Kaushan Script', cursive;
+  font-family: 'Kaushan Script', cursive;
   font-size:5em;
-  letter-spacing:3px;
+  /*letter-spacing:3px;*/
   color:#5892FF ;
   margin:0;
   margin-bottom:20px;
+  border: 1px solid blue;
 }
 .wrapper-1 p{
   margin:0;
@@ -337,6 +347,7 @@ body {
   color:#808080;
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing:1px;
+  border: 1px solid red;
 }
 .hidden_btn{
   color:#fff;
@@ -346,6 +357,7 @@ body {
   margin:30px 0;
   border-radius:30px;
   text-transform:capitalize;
+  border: 1px solid black;
   box-shadow: 0 10px 16px 1px rgba(174, 199, 251, 1);
 }
 
@@ -369,7 +381,8 @@ a {
 
 
 .slideshow .slide .title {
-  font: 300 40px/1.2 "Oswald", sans-serif;
+  margin-top: 70px;
+  font: 300 35px/1.2 "Oswald", sans-serif;
   /*border: 1px solid pink;*/
 }
 
@@ -389,15 +402,28 @@ a {
 
 .submit[type=button] {
   width: 18vw;
-  padding: 7px 10px 7px 10px;
-  font-size: 11px;
+  padding: 8px 10px 8px 10px;
+  font-size: 13px;
   /*border: 1px solid blue;*/
 }
 
 
-p {
-  font-size: 18px; 
-  /*border: 1px solid green;*/
+.check {
+  font-size: 18px;
+  padding: 5px 10px 5px 5px;
+}
+
+.balbal {
+  margin-top: 7px;
+  font-size: 10px;
+  height: 25px;
+  /*border: 1px solid blue;*/
+}
+
+.balbalh {
+  height: 30vh;
+  font-size: 15px;
+  /*border: 1px solid yellow;*/
 }
 
 
@@ -425,5 +451,18 @@ p {
 .slideshow .arrows .next:hover .svg {
   left: 5px;
 }
+
+.slideshow .pagination .item {
+  width: 30px;
+  /*border: 1px solid blue;*/
+}
+
+.slideshow .pagination .item::before {
+  width: 25px;
+  height: 3px;
+  /*border: 1px solid orange;*/
+}
+
+
 
 }
