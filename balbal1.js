@@ -268,7 +268,7 @@ function balbal1() {
     }
 
     else {
-      text = "Ang tamang sagot ay starbs"
+      text = "starbs"
       text1 = "&#10060; Ang starbs ay nangangahulugang pakopya.";
     }
   }
@@ -331,7 +331,7 @@ function balbal2() {
     }
 
     else {
-      text = "Ang tamang sagot ay sags"
+      text = "sags"
       text1 = "&#10060; Ang sags ay nangangahulugang pilit.";
     }
   }
@@ -394,7 +394,7 @@ function balbal3() {
     }
 
     else {
-      text = "Ang tamang sagot ay pics"
+      text = "pics"
       text1 = "&#10060; Ang pics ay nangangahulugang go ako.";
     }
   }
@@ -457,7 +457,7 @@ function balbal4() {
     }
 
     else {
-      text = "Ang tamang sagot ay carps"
+      text = "carps"
       text1 = "&#10060; Ang carps ay ang pagtatanong kung game ka ba.";
     }
   }
@@ -521,7 +521,7 @@ function balbal5() {
     }
 
     else {
-      text = "Ang tamang sagot ay sharks"
+      text = "sharks"
       text1 = "&#10060; Ang sharks ay nangangahulugang patingin.";
     }
   }
@@ -584,7 +584,7 @@ function balbal6() {
     }
 
     else {
-      text = "Ang tamang sagot ay scoobs"
+      text = "scoobs"
       text1 = "&#10060; Ang scoobs ay nangangahulugang hindi.";
     }
   }
@@ -648,7 +648,7 @@ function balbal7() {
     }
 
     else {
-      text = "Ang tamang sagot ay salt"
+      text = "salt"
       text1 = "&#10060; Ang salt ay nangangahulugang talaga.";
     }
   }
@@ -712,7 +712,7 @@ function balbal8() {
     }
 
     else {
-      text = "Ang tamang sagot ay tea"
+      text = "tea"
       text1 = "&#10060; Ang tea ay nangangahulugang tsismis.";
     }
   }
@@ -776,7 +776,7 @@ function balbal9() {
     }
 
     else {
-      text = "Ang tamang sagot ay salty"
+      text = "salty"
       text1 = "&#10060; Ang salty ay tumutukoy sa taong barinuhin.";
     }
   }
@@ -814,9 +814,8 @@ function balbal10() {
   else if (l_case == "bop") {
     score++;
     text1 = "&#x2705; Ang bop tumutukoy sa magandang kanta na mapapasayaw ka.";
-    text = ""
+    text = "";
   }
-
   else {
     if (attemptsb10 > 0) {
       attemptsb10--;
@@ -840,7 +839,7 @@ function balbal10() {
     }
 
     else {
-      text = "Ang tamang sagot ay bop"
+      text = "bop"
       text1 = "&#10060; Ang bop tumutukoy sa magandang kanta na mapapasayaw ka.";
     }
   }
@@ -903,7 +902,7 @@ function balbal11() {
     }
 
     else {
-      text = "Ang tamang sagot ay timbs"
+      text = "timbs"
       text1 = "&#10060; Ang timbs ay pagtatanong ng bakit.";
     }
   }
@@ -967,7 +966,7 @@ function balbal12() {
     }
 
     else {
-      text = "Ang tamang sagot ay awit"
+      text = "awit"
       text1 = "&#10060; Ang awit ay pinagsamang aw at sakit.";
     }
   }
@@ -1031,7 +1030,7 @@ function balbal13() {
     }
 
     else {
-      text = "Ang tamang sagot ay achoo"
+      text = "achoo"
       text1 = "&#10060; Ang achoo ay tumutukoy sa baklang mukhang straight.";
     }
   }
@@ -1095,7 +1094,7 @@ function balbal14() {
     }
 
     else {
-      text = "Ang tamang sagot ay tsimay"
+      text = "tsimay"
       text1 = "&#10060; Ang tsimay ay tumutukoy sa katulong.";
     }
   }
@@ -1160,7 +1159,7 @@ function balbal15() {
     }
 
     else {
-      text = "Ang tamang sagot ay gumps"
+      text = "gumps"
       text1 = "&#10060; Ang gumps ay nangangahulugang salamat.";
     }
   }
@@ -1224,7 +1223,7 @@ function balbal16() {
     }
 
     else {
-      text = "Ang tamang sagot ay pots"
+      text = "pots"
       text1 = "&#10060; Ang pots ay nangangahulugang okay.";
     }
   }
@@ -1288,7 +1287,7 @@ function balbal17() {
     }
 
     else {
-      text = "Ang tamang sagot ay caps"
+      text = "caps"
       text1 = "&#10060; Ang caps ay nangangahulugang hindi totoo.";
     }
   }
@@ -1354,7 +1353,7 @@ function balbal18() {
     }
 
     else {
-      text = "Ang tamang sagot ay sus"
+      text = "sus"
       text1 = "&#10060; Ang sus ay nangangahulugang kahina-hinala.";
     }
   }
@@ -1418,7 +1417,7 @@ function balbal19() {
     }
 
     else {
-      text = "Ang tamang sagot ay mom jeans"
+      text = "mom jeans"
       text1 = "&#10060; Ang mom jeans ay tumutukoy sa taong sabog.";
     }
   }
@@ -1482,7 +1481,7 @@ function balbal20() {
     }
 
     else {
-      text = "Ang tamang sagot ay kopong-kopong"
+      text = "kopong-kopong"
       text1 = "&#10060; Ang kopong-kopong ay nangangahulugang makaluma.";
     }
   }
@@ -1546,7 +1545,7 @@ function balbal21() {
     }
 
     else {
-      text = "Ang tamang sagot ay boujee"
+      text = "boujee"
       text1 = "&#10060; Ang boujee ay nangangahulugang sosyal.";
     }
   }
@@ -1610,7 +1609,7 @@ function balbal22() {
     }
 
     else {
-      text = "Ang tamang sagot ay temakats"
+      text = "temakats"
       text1 = "&#10060; Ang temakats ay nangangahulugang makati.";
     }
   }
@@ -1674,7 +1673,7 @@ function balbal23() {
     }
 
     else {
-      text = "Ang tamang sagot ay awpit"
+      text = "awpit"
       text1 = "&#10060; Ang awpit ay pinagsamang aw at pangit.";
     }
   }
@@ -1737,7 +1736,7 @@ function balbal24() {
     }
 
     else {
-      text = "Ang tamang sagot ay borlog"
+      text = "borlog"
       text1 = "&#10060; Ang borlog ay nangangahulugang tulog.";
     }
   }
@@ -1801,7 +1800,7 @@ function balbal25() {
     }
 
     else {
-      text = "Ang tamang sagot ay ebubot"
+      text = "ebubot"
       text1 = "&#10060; Ang ebubot ay babae.";
     }
   }
@@ -1865,7 +1864,7 @@ function balbal26() {
     }
 
     else {
-      text = "Ang tamang sagot ay epalas"
+      text = "epalas"
       text1 = "&#10060; Ang epalas ay salapi.";
     }
   }
@@ -1929,7 +1928,7 @@ function balbal27() {
     }
 
     else {
-      text = "Ang tamang sagot ay tospik"
+      text = "tospik"
       text1 = "&#10060; Ang tospik ay sapatos.";
     }
   }
@@ -1993,7 +1992,7 @@ function balbal28() {
     }
 
     else {
-      text = "Ang tamang sagot ay sondo"
+      text = "sondo"
       text1 = "&#10060; Ang sondo ay piso.";
     }
   }
@@ -2057,7 +2056,7 @@ function balbal29() {
     }
 
     else {
-      text = "Ang tamang sagot ay mateluk"
+      text = "mateluk"
       text1 = "&#10060; Ang mateluk ay nangangahulugang makulit.";
     }
   }
@@ -2121,7 +2120,7 @@ function balbal30() {
     }
 
     else {
-      text = "Ang tamang sagot ay taratitat"
+      text = "taratitat"
       text1 = "&#10060; Ang taratitat ay nangangahulugang madaldal.";
     }
   }
@@ -2186,7 +2185,7 @@ function balbal31() {
     }
 
     else {
-      text = "Ang tamang sagot ay papable"
+      text = "papable"
       text1 = "&#10060; Ang papable ay matipunong lalaki.";
     }
   }
@@ -2250,7 +2249,7 @@ function balbal32() {
     }
 
     else {
-      text = "Ang tamang sagot ay gurami"
+      text = "gurami"
       text1 = "&#10060; Ang gurami ay nangangahulugang matanda.";
     }
   }
@@ -2314,7 +2313,7 @@ function balbal33() {
     }
 
     else {
-      text = "Ang tamang sagot ay pampam"
+      text = "pampam"
       text1 = "&#10060; Ang pampam ay nangangahulugang papansin.";
     }
   }
@@ -2378,7 +2377,7 @@ function balbal34() {
     }
 
     else {
-      text = "Ang tamang sagot ay ksksks"
+      text = "ksksks"
       text1 = "&#10060; Ang ksksks ay ang pagtawa nang gigil.";
     }
   }
@@ -2442,7 +2441,7 @@ function balbal35() {
     }
 
     else {
-      text = "Ang tamang sagot ay chope"
+      text = "chope"
       text1 = "&#10060; Ang chope ay nangangahulugang torpe. Ito ang tawag sa mga taong nahihiyang umamin o manligaw sa taong nagugustuhan nila.";
     }
   }
@@ -2506,7 +2505,7 @@ function balbal36() {
     }
 
     else {
-      text = "Ang tamang sagot ay owshi"
+      text = "owshi"
       text1 = "&#10060; Ang ibig sabihin ng owshi ay mahal kita. Ito ang tawag sa salita upang ipahayag ang mas malalim pang nararamdaman sa isang tao.";
     }
   }
@@ -2570,7 +2569,7 @@ function balbal37() {
     }
 
     else {
-      text = "Ang tamang sagot ay shawty"
+      text = "shawty"
       text1 = "&#10060; Shawty ang kadalasang tinatawag sa mga babaeng na nakabibighani dala ng gandang pisikal o mapa gandang kalooban.";
     }
   }
@@ -2634,7 +2633,7 @@ function balbal38() {
     }
 
     else {
-      text = "Ang tamang sagot ay lit"
+      text = "lit"
       text1 = "&#10060; Ang lit ay tumutukoy sa isang bagay kung ito ay maangas o nakabibilib.";
     }
   }
@@ -2698,7 +2697,7 @@ function balbal39() {
     }
 
     else {
-      text = "Ang tamang sagot ay paeklat"
+      text = "paeklat"
       text1 = "&#10060; Ang paeklat ay tumutukoy sa pagiging OA o sobra sa dapat na emosyong maramdaman.";
     }
   }
@@ -2762,7 +2761,7 @@ function balbal40() {
     }
 
     else {
-      text = "Ang tamang sagot ay waswas"
+      text = "waswas"
       text1 = "&#10060; Ang waswas ay tumutukoy sa salitang asawa.";
     }
   }
@@ -2785,12 +2784,11 @@ function b40hint3() {
 
 function finalScore() {
 
-  document.getElementById("slideshow-inner").style.visibility = "hidden";
+  document.getElementById("slideshow-inner").style.display = "none";
   document.getElementById("hidden").style.display = "flex";
 
   if (score < 8) {
-    document.getElementById("next").style.display = "none";
-    document.getElementById("h1").innerHTML = "xadd";
+    document.getElementById("h1").innerHTML = "Bonak, HAHA ulit";
     document.getElementById("myScore").innerHTML = "Ang iyong score ay " + score;
   }
 
