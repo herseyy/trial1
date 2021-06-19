@@ -1,6 +1,6 @@
 header {
   background-color: #34262B;
-  background: url('https://live.staticflickr.com/3653/3660385740_72cd4770fc_b.jpg') no-repeat center fixed;
+  background: url('https://www.streetsoftheworld.com/shop/546/philippines-manila.jpg') no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -13,13 +13,17 @@ header {
   /*border: 1px solid orange;*/
 }
 header h1 {
-  color: #34262B;
+  /*color: #34262B;*/
+  -webkit-text-fill-color: #34262B; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #C0C0C0;
   font-size: 95px;
   margin-bottom: 100px;
   /*border: 1px solid blue;*/
 }
 h1 {
   font-family: "News Cycle", sans-serif;
+  /*background-color: #000;*/
 
 }
 .break1, .break2, .contact h2, .contact h3, p, header h4 {
@@ -27,7 +31,7 @@ h1 {
 }
 
 header h4 {
-  color: #1f0000;
+  color: #F5F5F5;
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 50px;
@@ -35,10 +39,11 @@ header h4 {
 
 }
 .red {
-  color: #3d0000;
-  font-weight: bold;
+  color: #000;
+  font-weight: 5000px;
   font-size: 30px;
   margin-bottom: 60px;
+  /*background-color: white;*/
   /*border: 1px solid red;*/
 }
 .team {
@@ -170,14 +175,14 @@ nav ul li {
 
 /*======== BREAK ====*/
 .break2 {
-  background: url(https://images.unsplash.com/photo-1563242152-568e5de6f2b8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGlnaHdheXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80) center center fixed;
+  background: url(https://image.kkday.com/v2/image/get/s1.kkday.com/product_20941/20190104070458_mkZEJ/jpg) center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .break2 h3 {
-  color: #f2f2f2;
+  color: #010101;
   font-size: 70px;
   font-weight: bold;
   margin-top: 8%;
