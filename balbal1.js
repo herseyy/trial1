@@ -2795,12 +2795,12 @@ function finalScore() {
 
   if (score < 8) {
     document.getElementById("next").style.display = "none";
-    document.getElementById("h1").innerHTML = "Bonak, HAHA ulit";
+    document.getElementById("h1").innerHTML = "Wala, ulit ka talaga";
     document.getElementById("myScore").innerHTML = "Ang iyong score ay " + score;
   }
 
   else {
-    document.getElementById("h1").innerHTML = "yey";
+    document.getElementById("h1").innerHTML = "Yey, pasado ka!";
     document.getElementById("myScore").innerHTML = "Ang iyong score ay " + score;
   }
 }
