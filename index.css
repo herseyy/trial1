@@ -85,6 +85,7 @@ header h4 {
   font-size: 28px;
   background: rgba(193, 41, 46, 0.6);
 }
+
 .team:hover {
   text-decoration: none;
   color: #F9F2F6;
@@ -254,7 +255,7 @@ header h4 {
 
 .team {
   padding: 10px 30px 10px 30px;
-  color: #F9F2F6;
+  font-size: 20px;
 }
 
 
