@@ -91,6 +91,7 @@ body {
   align-items: center;
     /*border: 1px solid white;*/
 }
+
 #score {
   font-size: 23px;
   color: white;
@@ -107,6 +108,7 @@ body {
   position: absolute;
   top: 0;
   left: 10px;
+  /*cursor: pointer;*/
 }
 
 
@@ -334,7 +336,7 @@ body {
 
 .h1{
   font-family: 'Kaushan Script', cursive;
-  font-size:70px;
+  font-size:60px;
   letter-spacing:3px;
   color:#5892FF ;
   margin:0;
@@ -350,6 +352,7 @@ body {
   /*border: 1px solid red;*/
 }
 .hidden_btn{
+  cursor: pointer;
   color:#fff;
   background:#5892FF;
   width: 230px;
@@ -464,7 +467,7 @@ a {
 }
 
 .h1{
-  font-size:45px;
+  font-size:40px;
   /*border: 1px solid blue;*/
 }
 .wrapper-1 p{
