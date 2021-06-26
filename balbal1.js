@@ -1,4 +1,25 @@
+// document.onkeydown = function(e) {
+//     if(e.keyCode == 123) {
+//      return false;
+//     }
+//     if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+//      return false;
+//     }
+//     if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+//      return false;
+//     }
+//     if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+//      return false;
+//     }
 
+//     if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)){
+//      return false;
+//     }      
+//  }
+
+// document.addEventListener("contextmenu", function(e){
+//     e.preventDefault();
+// }, false);
 
 var slideshowDuration = 4000;
 var slideshow=$('.main-content .slideshow');
@@ -1207,13 +1228,13 @@ function balbal15() {
 }
 
 function b15hint1() {
-  document.getElementById("b15h").innerHTML = "Pagbati";
-}
-function b15hint2() {
   document.getElementById("b15h").innerHTML = "May limang letra";
 }
+function b15hint2() {
+  document.getElementById("b15h").innerHTML = "Tukuyin ang ipinahihiwatig ng kulay berde sa traffic light";
+}
 function b15hint3() {
-  document.getElementById("b15h").innerHTML = "Ito ay sinasabi matapos tulungan ang isang tao";
+  document.getElementById("b15h").innerHTML = "Kasing tunog ng pump";
 }
 
 
@@ -1273,13 +1294,13 @@ function balbal16() {
 }
 
 function b16hint1() {
-  document.getElementById("b16h").innerHTML = "Pagtugon";
-}
-function b16hint2() {
   document.getElementById("b16h").innerHTML = "May apat na letra";
 }
+function b16hint2() {
+  document.getElementById("b16h").innerHTML = "Tukuyin ang ipinahihiwatig ng kulay pula sa traffic light";
+}
 function b16hint3() {
-  document.getElementById("b16h").innerHTML = "Ginagamit upang ipahiwatig ang pagsang-ayon sa isang bagay";
+  document.getElementById("b16h").innerHTML = "Gamitin ang rules sa balbal upang matukoy ang salita";
 }
 
 
@@ -1539,13 +1560,13 @@ function balbal20() {
 }
 
 function b20hint1() {
-  document.getElementById("b20h").innerHTML = "Katunog ng ikalawang pantig sa tawag ng mga chinese sa larong table tennis";
+  document.getElementById("b20h").innerHTML = "Nauulit na salita";
 }
 function b20hint2() {
-  document.getElementById("b20h").innerHTML = "Nauulit na salita at nagkakaroon ng labindalawa na letra";
+  document.getElementById("b20h").innerHTML = "May apat na pantig";
 }
 function b20hint3() {
-  document.getElementById("b20h").innerHTML = "Maaaring mainhalintulad sa antigong bagay, datihan at unang panahon";
+  document.getElementById("b20h").innerHTML = "Ang unang dalawang letra ay naririnig sa boksing";
 }
 
 
@@ -2265,7 +2286,7 @@ function balbal31() {
 }
 
 function b31hint1() {
-  document.getElementById("b31h").innerHTML = "May dalawang salita";
+  document.getElementById("b31h").innerHTML = "May tatlong pantig";
 }
 function b31hint2() {
   document.getElementById("b31h").innerHTML = "Katangian ng isang lalaki";
@@ -2466,7 +2487,7 @@ function b34hint1() {
   document.getElementById("b34h").innerHTML = "Isang uri ng reaksyon";
 }
 function b34hint2() {
-  document.getElementById("b34h").innerHTML = "Katunog ng huni ng pusa";
+  document.getElementById("b34h").innerHTML = "Pagtawag sa pusa";
 }
 function b34hint3() {
   document.getElementById("b34h").innerHTML = "Ibang paraan ng pagtawa";
@@ -2885,3 +2906,4 @@ function finalScore() {
     document.getElementById("myScore").innerHTML = "Ang iyong score ay " + score;
   }
 }
+
