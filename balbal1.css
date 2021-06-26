@@ -118,8 +118,8 @@ body {
   margin-left: -15%;
   width: 130%;
   font: 300 50px/1.2 "Oswald", sans-serif;
-  letter-spacing: 0.35em;
-  text-transform: uppercase;
+  letter-spacing: 5px;
+/*  text-transform: uppercase;*/
   /*border: 1px solid white;*/
   /*background-color: #686868;*/
 }
