@@ -1560,7 +1560,7 @@ function balbal20() {
 }
 
 function b20hint1() {
-  document.getElementById("b20h").innerHTML = "Nauulit na salita";
+  document.getElementById("b20h").innerHTML = "Inuulit na salita";
 }
 function b20hint2() {
   document.getElementById("b20h").innerHTML = "May apat na pantig";
