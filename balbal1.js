@@ -725,10 +725,10 @@ function balbal8() {
     text1 = "";
   } 
 
-  else if (l_case == "tea") {
+  else if (l_case == "kyawsan") {
     document.getElementById("submit8").style.display = "none";
     score++;
-    text1 = "&#x2705; Ang tea ay nangangahulugang tsismis.";
+    text1 = "&#x2705; Ang kyawsan ay nangangahulugang salaping 'thousand'.";
     text = "";
   }
 
@@ -756,8 +756,8 @@ function balbal8() {
 
     else {
       document.getElementById("submit8").style.display = "none";
-      text = "tea";
-      text1 = "&#10060; Ang tea ay nangangahulugang tsismis.";
+      text = "kyawsan";
+      text1 = "&#10060; Ang kyawsan ay nangangahulugang salaping 'thousand'.";
     }
   }
 
@@ -768,13 +768,13 @@ function balbal8() {
 
 
 function b8hint1() {
-  document.getElementById("b8h").innerHTML = "May tatlong letra";
+  document.getElementById("b8h").innerHTML = "May pitong letra";
 }
 function b8hint2() {
-  document.getElementById("b8h").innerHTML = "Kadalasang tawag sa 'chismis'";
+  document.getElementById("b8h").innerHTML = "Kalimitang sinasalita kasunod ng numero";
 }
 function b8hint3() {
-  document.getElementById("b8h").innerHTML = "Mainam na inumin tuwing umaga";
+  document.getElementById("b8h").innerHTML = "Ang letrang 'k' sa usaping pera";
 }
 
 
@@ -1560,7 +1560,7 @@ function balbal20() {
 }
 
 function b20hint1() {
-  document.getElementById("b20h").innerHTML = "Inuulit na salita";
+  document.getElementById("b20h").innerHTML = "Nauulit na salita";
 }
 function b20hint2() {
   document.getElementById("b20h").innerHTML = "May apat na pantig";
